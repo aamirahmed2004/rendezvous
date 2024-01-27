@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 
-namespace Hackathon.Classes.TeamDbContext
+namespace ClassLibrary.TeamDbContext
 {
     public class Group
     {

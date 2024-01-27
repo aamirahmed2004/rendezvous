@@ -1,5 +1,5 @@
 ﻿
-using Hackathon.Classes.TeamDbContext;
+using ClassLibrary.TeamDbContext;
 using Microsoft.Extensions.Logging;
 
 namespace Hackathon

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
-namespace Hackathon.Classes.TeamDbContext
+namespace ClassLibrary.TeamDbContext
 {
     public class TeamDbContext : DbContext
     {
@@ -17,7 +17,9 @@ namespace Hackathon.Classes.TeamDbContext
         public DbSet<Activity> Activities { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySql("your-connection-string", ServerVersion.AutoDetect("your-connection-string"));
+            string connectionString = "Server=notmobmeet-do-user-15708106-0.c.db.ondigitalocean.com;Port=25060;Database=defaultdb;User=doadmin;Password=AVNS_JlAi-afUsHwEZR07HVe;SslMode=Required;";
+            optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
         }
+    
     }
 }

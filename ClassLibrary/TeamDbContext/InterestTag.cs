@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hackathon.Classes.TeamDbContext
+namespace ClassLibrary.TeamDbContext
 {
     public class InterestTag
     {

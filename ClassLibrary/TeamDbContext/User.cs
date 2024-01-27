@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static Java.Util.Jar.Attributes;
 using System.Xml;
 using System.ComponentModel.DataAnnotations;
 
-namespace Hackathon.Classes.TeamDbContext
+namespace ClassLibrary.TeamDbContext
 {
     public class User
     {
