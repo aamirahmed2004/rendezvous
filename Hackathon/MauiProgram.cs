@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Logging;
+﻿
+using Hackathon.Classes.TeamDbContext;
+using Microsoft.Extensions.Logging;
 
 namespace Hackathon
 {
@@ -15,9 +17,10 @@ namespace Hackathon
                 });
 
             builder.Services.AddMauiBlazorWebView();
+            builder.Services.AddDbContext<TeamDbContext>();
 
 #if DEBUG
-    		builder.Services.AddBlazorWebViewDeveloperTools();
+            builder.Services.AddBlazorWebViewDeveloperTools();
     		builder.Logging.AddDebug();
 #endif
 
