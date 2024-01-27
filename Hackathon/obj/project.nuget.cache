@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+squNsBwWdcHegYK1WmV6rd2xtEU6yRkhsRFHWbomOngkIcQm44t+En7SuG2+JfphQE00CvxU9Y/ZFv/gJMgVA==",
+  "dgSpecHash": "oIcJdoDZgrVd4KuIzkoDyTASjzPcgjejakIm2tbQNWnfbdos7oYGpUhIFr8e6rhxpv0F8j6zSrPGADJvIemDuA==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\Documents\\Github\\Hackathon\\Hackathon\\Hackathon.csproj",
   "expectedPackageFiles": [
@@ -61,8 +61,6 @@
     "C:\\Users\\user\\.nuget\\packages\\microsoft.windowsappsdk\\1.3.230724000\\microsoft.windowsappsdk.1.3.230724000.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\mysql.data\\8.3.0\\mysql.data.8.3.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\mysql.entityframeworkcore\\8.0.0\\mysql.entityframeworkcore.8.0.0.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\mysqlconnector\\2.2.5\\mysqlconnector.2.2.5.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\7.0.0\\pomelo.entityframeworkcore.mysql.7.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\runtime.any.system.io\\4.3.0\\runtime.any.system.io.4.3.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\runtime.any.system.reflection\\4.3.0\\runtime.any.system.reflection.4.3.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\runtime.any.system.reflection.primitives\\4.3.0\\runtime.any.system.reflection.primitives.4.3.0.nupkg.sha512",

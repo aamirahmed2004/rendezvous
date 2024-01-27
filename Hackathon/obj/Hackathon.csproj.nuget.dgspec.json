@@ -45,6 +45,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Components.WebView.Maui": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.1, )"
@@ -64,10 +68,6 @@
             "MySql.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.0, )"
-            },
-            "Pomelo.EntityFrameworkCore.MySql": {
-              "target": "Package",
-              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -188,10 +188,6 @@
               "target": "Package",
               "version": "[8.0.1, )",
               "autoReferenced": true
-            },
-            "Pomelo.EntityFrameworkCore.MySql": {
-              "target": "Package",
-              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -243,10 +239,6 @@
               "target": "Package",
               "version": "[8.0.1, )",
               "autoReferenced": true
-            },
-            "Pomelo.EntityFrameworkCore.MySql": {
-              "target": "Package",
-              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -298,10 +290,6 @@
               "target": "Package",
               "version": "[8.0.1, )",
               "autoReferenced": true
-            },
-            "Pomelo.EntityFrameworkCore.MySql": {
-              "target": "Package",
-              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -348,10 +336,6 @@
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
               "version": "[8.0.3, )"
-            },
-            "Pomelo.EntityFrameworkCore.MySql": {
-              "target": "Package",
-              "version": "[7.0.0, )"
             }
           },
           "imports": [

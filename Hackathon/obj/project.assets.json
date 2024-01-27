@@ -1006,36 +1006,6 @@
           }
         }
       },
-      "MySqlConnector/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
-          "MySqlConnector": "2.2.5"
-        },
-        "compile": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -3059,9 +3029,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -4054,36 +4024,6 @@
           }
         }
       },
-      "MySqlConnector/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
-          "MySqlConnector": "2.2.5"
-        },
-        "compile": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -6065,9 +6005,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -7060,36 +7000,6 @@
           }
         }
       },
-      "MySqlConnector/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
-          "MySqlConnector": "2.2.5"
-        },
-        "compile": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -9071,9 +8981,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -10066,36 +9976,6 @@
           }
         }
       },
-      "MySqlConnector/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
-          "MySqlConnector": "2.2.5"
-        },
-        "compile": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -12077,9 +11957,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -13072,36 +12952,6 @@
           }
         }
       },
-      "MySqlConnector/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
-          "MySqlConnector": "2.2.5"
-        },
-        "compile": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -15083,9 +14933,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -16078,36 +15928,6 @@
           }
         }
       },
-      "MySqlConnector/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
-          "MySqlConnector": "2.2.5"
-        },
-        "compile": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -18089,9 +17909,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -19084,36 +18904,6 @@
           }
         }
       },
-      "MySqlConnector/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
-          "MySqlConnector": "2.2.5"
-        },
-        "compile": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -21095,9 +20885,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -22093,36 +21883,6 @@
         },
         "runtime": {
           "lib/net8.0/MySql.EntityFrameworkCore.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "MySqlConnector/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
-          "MySqlConnector": "2.2.5"
-        },
-        "compile": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
             "related": ".xml"
           }
         }
@@ -24108,9 +23868,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -25132,36 +24892,6 @@
           }
         }
       },
-      "MySqlConnector/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
-          "MySqlConnector": "2.2.5"
-        },
-        "compile": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -25540,9 +25270,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -26536,36 +26266,6 @@
           }
         }
       },
-      "MySqlConnector/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
-          "MySqlConnector": "2.2.5"
-        },
-        "compile": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -26995,9 +26695,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -27991,36 +27691,6 @@
           }
         }
       },
-      "MySqlConnector/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
-          "MySqlConnector": "2.2.5"
-        },
-        "compile": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -28450,9 +28120,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -29446,36 +29116,6 @@
           }
         }
       },
-      "MySqlConnector/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
-          "MySqlConnector": "2.2.5"
-        },
-        "compile": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -29905,9 +29545,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -30901,36 +30541,6 @@
           }
         }
       },
-      "MySqlConnector/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
-          "MySqlConnector": "2.2.5"
-        },
-        "compile": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -31360,9 +30970,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -32356,36 +31966,6 @@
           }
         }
       },
-      "MySqlConnector/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
-          "MySqlConnector": "2.2.5"
-        },
-        "compile": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -32815,9 +32395,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -33811,36 +33391,6 @@
           }
         }
       },
-      "MySqlConnector/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
-          "MySqlConnector": "2.2.5"
-        },
-        "compile": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -34270,9 +33820,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -35273,36 +34823,6 @@
           }
         }
       },
-      "MySqlConnector/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
-          "MySqlConnector": "2.2.5"
-        },
-        "compile": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -35716,9 +35236,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -36740,36 +36260,6 @@
           }
         }
       },
-      "MySqlConnector/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
-          "MySqlConnector": "2.2.5"
-        },
-        "compile": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -37148,9 +36638,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -38144,36 +37634,6 @@
           }
         }
       },
-      "MySqlConnector/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
-          "MySqlConnector": "2.2.5"
-        },
-        "compile": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -38603,9 +38063,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -39599,36 +39059,6 @@
           }
         }
       },
-      "MySqlConnector/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
-          "MySqlConnector": "2.2.5"
-        },
-        "compile": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -40058,9 +39488,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -41054,36 +40484,6 @@
           }
         }
       },
-      "MySqlConnector/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
-          "MySqlConnector": "2.2.5"
-        },
-        "compile": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -41513,9 +40913,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -42509,36 +41909,6 @@
           }
         }
       },
-      "MySqlConnector/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
-          "MySqlConnector": "2.2.5"
-        },
-        "compile": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -42968,9 +42338,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -43964,36 +43334,6 @@
           }
         }
       },
-      "MySqlConnector/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
-          "MySqlConnector": "2.2.5"
-        },
-        "compile": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -44423,9 +43763,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -45419,36 +44759,6 @@
           }
         }
       },
-      "MySqlConnector/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
-          "MySqlConnector": "2.2.5"
-        },
-        "compile": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -45878,9 +45188,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -46881,36 +46191,6 @@
           }
         }
       },
-      "MySqlConnector/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
-          "MySqlConnector": "2.2.5"
-        },
-        "compile": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -47324,9 +46604,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -48491,36 +47771,6 @@
           }
         }
       },
-      "MySqlConnector/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
-          "MySqlConnector": "2.2.5"
-        },
-        "compile": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -48899,9 +48149,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -50010,36 +49260,6 @@
           }
         }
       },
-      "MySqlConnector/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
-          "MySqlConnector": "2.2.5"
-        },
-        "compile": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -50469,9 +49689,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -51580,36 +50800,6 @@
           }
         }
       },
-      "MySqlConnector/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
-          "MySqlConnector": "2.2.5"
-        },
-        "compile": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -52039,9 +51229,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -53150,36 +52340,6 @@
           }
         }
       },
-      "MySqlConnector/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
-          "MySqlConnector": "2.2.5"
-        },
-        "compile": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -53609,9 +52769,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -54720,36 +53880,6 @@
           }
         }
       },
-      "MySqlConnector/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
-          "MySqlConnector": "2.2.5"
-        },
-        "compile": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -55179,9 +54309,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -56290,36 +55420,6 @@
           }
         }
       },
-      "MySqlConnector/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
-          "MySqlConnector": "2.2.5"
-        },
-        "compile": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -56749,9 +55849,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -57860,36 +56960,6 @@
           }
         }
       },
-      "MySqlConnector/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
-          "MySqlConnector": "2.2.5"
-        },
-        "compile": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -58319,9 +57389,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -59443,36 +58513,6 @@
           }
         }
       },
-      "MySqlConnector/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
-          "MySqlConnector": "2.2.5"
-        },
-        "compile": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -59886,9 +58926,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -62761,50 +61801,6 @@
         "logo-mysql-170x115.png",
         "mysql.entityframeworkcore.8.0.0.nupkg.sha512",
         "mysql.entityframeworkcore.nuspec"
-      ]
-    },
-    "MySqlConnector/2.2.5": {
-      "sha512": "6sinY78RvryhHwpup3awdjYO7d5hhWahb5p/1VDODJhSxJggV/sBbYuKK5IQF9TuzXABiddqUbmRfM884tqA3Q==",
-      "type": "package",
-      "path": "mysqlconnector/2.2.5",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "lib/net461/MySqlConnector.dll",
-        "lib/net461/MySqlConnector.xml",
-        "lib/net471/MySqlConnector.dll",
-        "lib/net471/MySqlConnector.xml",
-        "lib/net6.0/MySqlConnector.dll",
-        "lib/net6.0/MySqlConnector.xml",
-        "lib/net7.0/MySqlConnector.dll",
-        "lib/net7.0/MySqlConnector.xml",
-        "lib/netcoreapp3.1/MySqlConnector.dll",
-        "lib/netcoreapp3.1/MySqlConnector.xml",
-        "lib/netstandard2.0/MySqlConnector.dll",
-        "lib/netstandard2.0/MySqlConnector.xml",
-        "lib/netstandard2.1/MySqlConnector.dll",
-        "lib/netstandard2.1/MySqlConnector.xml",
-        "logo.png",
-        "mysqlconnector.2.2.5.nupkg.sha512",
-        "mysqlconnector.nuspec"
-      ]
-    },
-    "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
-      "sha512": "Qk5WB/skSZet5Yrz6AN2ywjZaB1pxfAmvQ+5I4khTkLwwIamI4QJoH2NphCWLFQL+2ar8HvsNCTmwYk0qhqL0w==",
-      "type": "package",
-      "path": "pomelo.entityframeworkcore.mysql/7.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "icon.png",
-        "lib/net6.0/Pomelo.EntityFrameworkCore.MySql.dll",
-        "lib/net6.0/Pomelo.EntityFrameworkCore.MySql.xml",
-        "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll",
-        "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.xml",
-        "pomelo.entityframeworkcore.mysql.7.0.0.nupkg.sha512",
-        "pomelo.entityframeworkcore.mysql.nuspec"
       ]
     },
     "runtime.any.System.IO/4.3.0": {
@@ -66130,8 +65126,7 @@
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.3",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.3",
-      "Microsoft.NET.ILLink.Tasks >= 8.0.1",
-      "Pomelo.EntityFrameworkCore.MySql >= 7.0.0"
+      "Microsoft.NET.ILLink.Tasks >= 8.0.1"
     ],
     "net8.0-ios17.2": [
       "ClassLibrary >= 1.0.0",
@@ -66140,8 +65135,7 @@
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.3",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.3",
-      "Microsoft.NET.ILLink.Tasks >= 8.0.1",
-      "Pomelo.EntityFrameworkCore.MySql >= 7.0.0"
+      "Microsoft.NET.ILLink.Tasks >= 8.0.1"
     ],
     "net8.0-maccatalyst17.2": [
       "ClassLibrary >= 1.0.0",
@@ -66150,8 +65144,7 @@
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.3",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.3",
-      "Microsoft.NET.ILLink.Tasks >= 8.0.1",
-      "Pomelo.EntityFrameworkCore.MySql >= 7.0.0"
+      "Microsoft.NET.ILLink.Tasks >= 8.0.1"
     ],
     "net8.0-windows10.0.19041": [
       "ClassLibrary >= 1.0.0",
@@ -66159,8 +65152,7 @@
       "Microsoft.EntityFrameworkCore >= 8.0.1",
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.3",
-      "Microsoft.Maui.Controls.Compatibility >= 8.0.3",
-      "Pomelo.EntityFrameworkCore.MySql >= 7.0.0"
+      "Microsoft.Maui.Controls.Compatibility >= 8.0.3"
     ]
   },
   "packageFolders": {
@@ -66265,10 +65257,6 @@
             "target": "Package",
             "version": "[8.0.1, )",
             "autoReferenced": true
-          },
-          "Pomelo.EntityFrameworkCore.MySql": {
-            "target": "Package",
-            "version": "[7.0.0, )"
           }
         },
         "imports": [
@@ -66320,10 +65308,6 @@
             "target": "Package",
             "version": "[8.0.1, )",
             "autoReferenced": true
-          },
-          "Pomelo.EntityFrameworkCore.MySql": {
-            "target": "Package",
-            "version": "[7.0.0, )"
           }
         },
         "imports": [
@@ -66375,10 +65359,6 @@
             "target": "Package",
             "version": "[8.0.1, )",
             "autoReferenced": true
-          },
-          "Pomelo.EntityFrameworkCore.MySql": {
-            "target": "Package",
-            "version": "[7.0.0, )"
           }
         },
         "imports": [
@@ -66425,10 +65405,6 @@
           "Microsoft.Maui.Controls.Compatibility": {
             "target": "Package",
             "version": "[8.0.3, )"
-          },
-          "Pomelo.EntityFrameworkCore.MySql": {
-            "target": "Package",
-            "version": "[7.0.0, )"
           }
         },
         "imports": [

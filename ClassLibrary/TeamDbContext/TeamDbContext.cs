@@ -18,7 +18,7 @@ namespace ClassLibrary.TeamDbContext
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             string connectionString = "Server=notmobmeet-do-user-15708106-0.c.db.ondigitalocean.com;Port=25060;Database=defaultdb;User=doadmin;Password=AVNS_JlAi-afUsHwEZR07HVe;SslMode=Required;";
-            optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+            optionsBuilder.UseMySQL(connectionString);
         }
     
     }
