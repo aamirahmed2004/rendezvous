@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
-namespace ClassLibrary.TeamDbContext
+namespace ClassLibrary.Db
 {
     public class TeamDbContext : DbContext
     {

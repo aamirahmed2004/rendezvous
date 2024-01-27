@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 
-namespace ClassLibrary.TeamDbContext
+namespace ClassLibrary.Db
 {
     public class Profile
     {

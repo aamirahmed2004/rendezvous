@@ -1,5 +1,5 @@
 ﻿
-using ClassLibrary.TeamDbContext;
+using ClassLibrary.Db;
 using Microsoft.Extensions.Logging;
 
 namespace Hackathon

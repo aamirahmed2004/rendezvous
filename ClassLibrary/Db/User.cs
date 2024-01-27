@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.ComponentModel.DataAnnotations;
 
-namespace ClassLibrary.TeamDbContext
+namespace ClassLibrary.Db
 {
     public class User
     {
