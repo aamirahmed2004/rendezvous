@@ -8,44 +8,98 @@
 @using System.Text.Json;
 @* @inject AuthenticationStateProvider _authenticationStateProvider *@
 
-<h3><em>User</em></h3>
+<h3 class="align-text-top text-center font-black py-2.5 text-3xl">
+<em>
+        User
+</em>
+</h3>
 
-@if (user == null)
+<div class="border rounded p-4 max-w-xs mx-auto">
+    
+    @if (user == null)
+    {
+        <div class="mb-4">
+            <label class="block text-sm font-medium text-white-600">Name:</label>
+            <input type="text" class="text-red-800 border-gray-600 rounded p-2 w-full" value="Loading..." readonly />
+        </div>
+        <div class="mb-4">
+            <label class="block text-sm font-medium text-white-600">Nickname:</label>
+            <input type="text" class="text-red-800 border-gray-600 rounded p-2 w-full" value="Loading ..." readonly />
+        </div>
+        <div class="mb-4">
+            <label class="block text-sm font-medium text-white-600">Email:</label>
+            <input type="text" class="text-red-800 border-gray-600 rounded p-2 w-full" value="Loading..." readonly />
+        </div>
+        <div>
+            <label class="block text-sm font-medium text-white-600">Birthdate:</label>
+            <input type="text" class="text-red-800 border-gray-600 rounded p-2 w-full" value="Loading..." readonly />
+        </div>
+    }
+    else
+    {
+        <div class="mb-4">
+            <label class="block text-sm font-medium text-white-600">Name:</label>
+            <input type="text" class="text-red-800 border-gray-600 rounded p-2 w-full" @bind-value="@user.Name" />
+        </div>
+        <div class="mb-4">
+            <label class="block text-sm font-medium text-white-600">Nickname:</label>
+            <input type="text" class="text-red-800 border-gray-600 rounded p-2 w-full" @bind-value="@user.Nickname" />
+        </div>
+        <div class="mb-4">
+            <label class="block text-sm font-medium text-white-600">Email:</label>
+            <input type="text" class="text-red-800 border-grey-600 rounded p-2 w-full" @bind-value="@user.Email" />
+
+        </div>
+        <div>
+            <label class="block text-sm font-medium background-grey-400 text-white-600">Birthdate:</label>
+            <input type="text" class="text-red-800 border-gray-600 rounded p-2 w-full" value="@user?.BDate.ToString("yyyy-MM-dd")" readonly />
+        </div>
+    }
+</div>
+
+<div>
+
+
+<button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mt-4" @onclick="Save">
+    Save
+</button>
+
+<h4 class="align-text-top text-center font-black py-2.5 text-3xl">
+    <em>
+        Profiles
+    </em>
+</h4>
+
+</div>
+
+@if (!SuccessfulSave && !Unchanged)
 {
-    <div>
-        <label>User ID:</label>
-        <input type="text" class="text-red-800" value="Loading..." readonly />
-    </div>
-    <div>
-        <label>Name:</label>
-        <input type="text" class="text-red-800" value="Loading..." readonly />
-    </div>
-    <div>
-        <label>Email:</label>
-        <input type="text" class="text-red-800" value="Loading..." readonly />
-    </div>
+    <p class="text-red-500 text-xs mt-1">Failed to save.</p>
+}
+else if (SuccessfulSave)
+{
+    <p class="text-green-600 text-xs mt-1">Successfully saved!</p>
 }
 
-else
-{
-    <div>
-        <label>User ID:</label>
-        <input type="text" value="@user?.id" readonly />
+<div class="flex justify-center">
+    <div class="w-72 h-48 bg-purple-600 text-white p-4 rounded-lg">
+        <div class="top-2 left-2 w-10 h-10 bg-white rounded-lg"></div>
+        <div class="mb-4 border-b text-white pb-2 font-semibold">-------</div>
+        <div class="mb-4 border-b text-white pb-2 font-semibold">-------</div>
+        <div class="mb-4 border-b text-white pb-2 font-semibold">-------</div>
     </div>
-    <div>
-        <label>Name:</label>
-        <input type="text" value="@user?.Name" readonly />
-    </div>
-    <div>
-        <label>Email:</label>
-        <input type="text" value="@user?.Email" readonly />
-    </div>
-}
+
+</div>
+
+
+
 
 
 @code {
     private User user { get; set; }
     private int userId { get; set; }
+    private bool Unchanged { get; set; } = true;
+    private bool SuccessfulSave { get; set; } 
 
     protected override async Task OnInitializedAsync()
     {
@@ -64,11 +118,28 @@ else
             // var userid = authenticationstate.user.findfirst("sub")?.value;
             await using var db = await _db.CreateDbContextAsync();
             user = await db.Users.FirstOrDefaultAsync(u => u.id == 1);
-            
+
         }
         catch (Exception ex)
         {
             Console.WriteLine(ex);
         }
+    }
+
+    private async Task Save()
+    {
+        try
+        {
+            await using var db = await _db.CreateDbContextAsync();
+            db.Users.Update(user);
+            await db.SaveChangesAsync();
+            SuccessfulSave = true; 
+
+        }   catch(Exception ex)
+        {
+            Console.WriteLine(ex);
+            SuccessfulSave = false;
+        }
+
     }
 }
