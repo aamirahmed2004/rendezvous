@@ -1,0 +1,47 @@
+﻿@page "/profiles"
+@using ClassLibrary.Db
+@using Microsoft.EntityFrameworkCore
+@using Hackathon.Components
+@inject IDbContextFactory<TeamDbContext> _db
+
+<h1>Profiles</h1>
+
+@if (Profiles == null)
+{
+    <div>Loading...</div>
+}
+else
+{
+
+    <div class="flex overflow-x-auto">
+        @foreach (Profile p in Profiles)
+        {
+            <div class="w-vw">
+                <CompProfile profile="@p" />
+            </div>
+        }
+    </div>
+   
+
+
+
+    
+}
+
+
+@code {
+    public List<Profile>? Profiles { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            await using var db = await _db.CreateDbContextAsync();
+            Profiles = await db.Profiles.Include(i => i.User).ToListAsync();
+            await base.OnInitializedAsync();
+        }catch(Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+    
+    }
+}

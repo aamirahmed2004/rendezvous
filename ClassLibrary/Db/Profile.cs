@@ -15,7 +15,11 @@ namespace ClassLibrary.Db
         public int id { get; set; }
         public int UserId { get; set; }
         public User User { get; set; }
-        public List<Image> Images { get; set; }
+
+        /// <summary>
+        /// name of the profile
+        /// </summary>
+        public string Name { get; set; }
         /// <summary>
         /// tags that have interests listed “hiking” “fitness” “painting” “games”
         /// </summary>

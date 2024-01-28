@@ -3,6 +3,7 @@ using System;
 using ClassLibrary.Db;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ClassLibrary.Migrations
 {
     [DbContext(typeof(TeamDbContext))]
-    partial class TeamDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240128105740_BDate_to_DateTime")]
+    partial class BDate_to_DateTime
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -75,8 +78,8 @@ namespace ClassLibrary.Migrations
                             Age_rating = "18+",
                             Description = "Football is a family of team sports that involve, to varying degrees, kicking a ball to score a goal.",
                             Name = "Football",
-                            Time_end = new DateTime(2024, 1, 29, 4, 2, 21, 788, DateTimeKind.Local).AddTicks(1877),
-                            Time_start = new DateTime(2024, 1, 28, 4, 2, 21, 788, DateTimeKind.Local).AddTicks(1829),
+                            Time_end = new DateTime(2024, 1, 29, 2, 57, 40, 92, DateTimeKind.Local).AddTicks(8531),
+                            Time_start = new DateTime(2024, 1, 28, 2, 57, 40, 92, DateTimeKind.Local).AddTicks(8482),
                             isPrivate = false
                         });
                 });
@@ -186,10 +189,6 @@ namespace ClassLibrary.Migrations
                     b.Property<string>("LookingFor")
                         .HasColumnType("longtext");
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
                     b.Property<string>("Pronouns")
                         .HasColumnType("longtext");
 
@@ -209,7 +208,6 @@ namespace ClassLibrary.Migrations
                             AboutMe = "I am a student at the University of Utah",
                             Links = "https://www.facebook.com/ https://www.instagram.com/",
                             LookingFor = "I am looking for a group of people to play football with",
-                            Name = "Football",
                             Pronouns = "He/Him",
                             UserId = 1
                         },
@@ -219,7 +217,6 @@ namespace ClassLibrary.Migrations
                             AboutMe = "I am a student at the University of Utah",
                             Links = "https://www.facebook.com/ https://www.instagram.com/",
                             LookingFor = "I am looking for a group of people to play football with",
-                            Name = "Football",
                             Pronouns = "He/Him",
                             UserId = 2
                         });

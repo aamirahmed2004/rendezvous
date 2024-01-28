@@ -11,11 +11,11 @@ namespace ClassLibrary.Db
     public class TeamDbContext : DbContext
     {
         public DbSet<User> Users { get; set; }
-
         public DbSet<Group> Groups { get; set; }
         public DbSet<Profile> Profiles { get; set; }
         public DbSet<InterestTag> InterestTags { get; set; }
         public DbSet<Activity> Activities { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             string connectionString = "Server=notmobmeet-do-user-15708106-0.c.db.ondigitalocean.com;Port=25060;Database=mob;User=doadmin;Password=AVNS_JlAi-afUsHwEZR07HVe;SslMode=Required;";
@@ -38,6 +38,9 @@ namespace ClassLibrary.Db
                 .HasColumnType("blob");
 
             DbSeed.SeedActivities(modelBuilder);
+            List<User> users = DbSeed.SeedUsers(modelBuilder);
+            List<InterestTag> tags = DbSeed.SeedTags(modelBuilder);
+            DbSeed.SeedProfile(modelBuilder, users, tags);
             
         }
 

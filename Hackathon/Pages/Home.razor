@@ -27,8 +27,14 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-
-        await using var db = await _db.CreateDbContextAsync();
-        Activities = await db.Activities.Include(i => i.Profiles).Include(i => i.Groups).ToListAsync();
+        try
+        {
+            await using var db = await _db.CreateDbContextAsync();
+            Activities = await db.Activities.Include(i => i.Profiles).Include(i => i.Groups).ToListAsync();
+        }catch(Exception e)
+        {
+            Console.WriteLine(e.Message);
+        }
+    
     }
 }

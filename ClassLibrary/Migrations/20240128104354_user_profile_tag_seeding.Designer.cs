@@ -3,6 +3,7 @@ using System;
 using ClassLibrary.Db;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ClassLibrary.Migrations
 {
     [DbContext(typeof(TeamDbContext))]
-    partial class TeamDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240128104354_user_profile_tag_seeding")]
+    partial class user_profile_tag_seeding
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -75,8 +78,8 @@ namespace ClassLibrary.Migrations
                             Age_rating = "18+",
                             Description = "Football is a family of team sports that involve, to varying degrees, kicking a ball to score a goal.",
                             Name = "Football",
-                            Time_end = new DateTime(2024, 1, 29, 4, 2, 21, 788, DateTimeKind.Local).AddTicks(1877),
-                            Time_start = new DateTime(2024, 1, 28, 4, 2, 21, 788, DateTimeKind.Local).AddTicks(1829),
+                            Time_end = new DateTime(2024, 1, 29, 2, 43, 54, 374, DateTimeKind.Local).AddTicks(2062),
+                            Time_start = new DateTime(2024, 1, 28, 2, 43, 54, 374, DateTimeKind.Local).AddTicks(2022),
                             isPrivate = false
                         });
                 });
@@ -118,7 +121,12 @@ namespace ClassLibrary.Migrations
                         .IsRequired()
                         .HasColumnType("blob");
 
+                    b.Property<int?>("Profileid")
+                        .HasColumnType("int");
+
                     b.HasKey("id");
+
+                    b.HasIndex("Profileid");
 
                     b.ToTable("Image");
                 });
@@ -186,10 +194,6 @@ namespace ClassLibrary.Migrations
                     b.Property<string>("LookingFor")
                         .HasColumnType("longtext");
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
                     b.Property<string>("Pronouns")
                         .HasColumnType("longtext");
 
@@ -209,7 +213,6 @@ namespace ClassLibrary.Migrations
                             AboutMe = "I am a student at the University of Utah",
                             Links = "https://www.facebook.com/ https://www.instagram.com/",
                             LookingFor = "I am looking for a group of people to play football with",
-                            Name = "Football",
                             Pronouns = "He/Him",
                             UserId = 1
                         },
@@ -219,7 +222,6 @@ namespace ClassLibrary.Migrations
                             AboutMe = "I am a student at the University of Utah",
                             Links = "https://www.facebook.com/ https://www.instagram.com/",
                             LookingFor = "I am looking for a group of people to play football with",
-                            Name = "Football",
                             Pronouns = "He/Him",
                             UserId = 2
                         });
@@ -231,8 +233,8 @@ namespace ClassLibrary.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("BDate")
-                        .HasColumnType("datetime(6)");
+                    b.Property<DateOnly>("BDate")
+                        .HasColumnType("date");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -265,7 +267,7 @@ namespace ClassLibrary.Migrations
                         new
                         {
                             id = 1,
-                            BDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            BDate = new DateOnly(1, 1, 1),
                             Email = "jd@gmail.com",
                             Name = "John Doe",
                             Nickname = "JD",
@@ -274,7 +276,7 @@ namespace ClassLibrary.Migrations
                         new
                         {
                             id = 2,
-                            BDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            BDate = new DateOnly(1, 1, 1),
                             Email = "jane@gmai.com",
                             Name = "Jane Doe",
                             Nickname = "Jane",
@@ -321,6 +323,13 @@ namespace ClassLibrary.Migrations
                         .IsRequired();
 
                     b.Navigation("Activity");
+                });
+
+            modelBuilder.Entity("ClassLibrary.Db.Image", b =>
+                {
+                    b.HasOne("ClassLibrary.Db.Profile", null)
+                        .WithMany("Images")
+                        .HasForeignKey("Profileid");
                 });
 
             modelBuilder.Entity("ClassLibrary.Db.InterestTag", b =>
@@ -375,6 +384,8 @@ namespace ClassLibrary.Migrations
 
             modelBuilder.Entity("ClassLibrary.Db.Profile", b =>
                 {
+                    b.Navigation("Images");
+
                     b.Navigation("InterestTags");
                 });
 #pragma warning restore 612, 618
