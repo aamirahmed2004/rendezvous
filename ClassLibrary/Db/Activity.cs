@@ -12,6 +12,7 @@ namespace ClassLibrary.Db
         [Key]
         public int id { get; set; }
         public bool isPrivate { get; set; }
+        public string Name { get; set; }
         /// <summary>
         /// place or can be virtual or in space
         /// </summary>
@@ -19,6 +20,8 @@ namespace ClassLibrary.Db
         public DateTime Time_start { get; set; }
         public DateTime Time_end { get; set; }
         public string Age_rating { get; set; }
+        public string Description { get; set; }
+        public List<Profile> Profiles { get; set; }
 
 
     }

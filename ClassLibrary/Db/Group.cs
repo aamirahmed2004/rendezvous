@@ -16,7 +16,11 @@ namespace ClassLibrary.Db
         public Activity Activity { get; set; }
         public string Name { get; set; }
         public string About { get; set; }
+        public int ReqNumUsers { get; set; }
+        public int 
         public List<User> Users { get; set; }
+        public List<Profile> Profiles { get; set; }
+
 
 
     }

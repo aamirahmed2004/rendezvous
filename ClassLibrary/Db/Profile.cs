@@ -15,7 +15,7 @@ namespace ClassLibrary.Db
         public int id { get; set; }
         public int UserId { get; set; }
         public User User { get; set; }
-        //public List<Blob> Image { get; set; }
+        public List<Image> Images { get; set; }
         /// <summary>
         /// tags that have interests listed “hiking” “fitness” “painting” “games”
         /// </summary>
@@ -33,6 +33,8 @@ namespace ClassLibrary.Db
         /// kind of group you’re looking for
         /// </summary>
         public string? LookingFor { get; set; }
-        //public List<string>? Links { get; set; }
+        public string Links { get; set; }
+        public List<Group> Groups { get; set; }
+        public List<Activity> Activities { get; set; }
     }
 }

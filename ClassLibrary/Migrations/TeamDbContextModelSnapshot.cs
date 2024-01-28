@@ -43,7 +43,7 @@ namespace ClassLibrary.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("Activities");
+                    b.ToTable("Activities", (string)null);
                 });
 
             modelBuilder.Entity("ClassLibrary.TeamDbContext.Group", b =>
@@ -67,7 +67,7 @@ namespace ClassLibrary.Migrations
 
                     b.HasIndex("ActivityId");
 
-                    b.ToTable("Groups");
+                    b.ToTable("Groups", (string)null);
                 });
 
             modelBuilder.Entity("ClassLibrary.TeamDbContext.InterestTag", b =>
@@ -87,7 +87,7 @@ namespace ClassLibrary.Migrations
 
                     b.HasIndex("Profileid");
 
-                    b.ToTable("InterestTags");
+                    b.ToTable("InterestTags", (string)null);
                 });
 
             modelBuilder.Entity("ClassLibrary.TeamDbContext.Profile", b =>
@@ -112,7 +112,7 @@ namespace ClassLibrary.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Profiles");
+                    b.ToTable("Profiles", (string)null);
                 });
 
             modelBuilder.Entity("ClassLibrary.TeamDbContext.User", b =>
@@ -149,7 +149,7 @@ namespace ClassLibrary.Migrations
 
                     b.HasIndex("Groupid");
 
-                    b.ToTable("Users");
+                    b.ToTable("Users", (string)null);
                 });
 
             modelBuilder.Entity("ClassLibrary.TeamDbContext.Group", b =>

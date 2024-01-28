@@ -68,12 +68,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Classes\" />
-      <Folder Include="Components\" />
-      <Folder Include="Migrations\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\ClassLibrary\ClassLibrary.csproj" />
     </ItemGroup>
 
