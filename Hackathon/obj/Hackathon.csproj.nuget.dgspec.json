@@ -59,23 +59,19 @@
               "target": "Package",
               "version": "[8.0.1, )"
             },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.1, )"
             },
-            "MySql.Data": {
-              "target": "Package",
-              "version": "[8.3.0, )"
-            },
             "MySql.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.0, )"
-            },
-            "MySqlConnector": {
-              "target": "Package",
-              "version": "[2.3.5, )"
             }
           },
           "imports": [
@@ -179,6 +175,10 @@
               "target": "Package",
               "version": "[8.0.1, )"
             },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -196,14 +196,6 @@
               "target": "Package",
               "version": "[8.0.1, )",
               "autoReferenced": true
-            },
-            "MySql.Data": {
-              "target": "Package",
-              "version": "[8.3.0, )"
-            },
-            "MySqlConnector": {
-              "target": "Package",
-              "version": "[2.3.5, )"
             }
           },
           "imports": [
@@ -238,6 +230,10 @@
               "target": "Package",
               "version": "[8.0.1, )"
             },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -255,14 +251,6 @@
               "target": "Package",
               "version": "[8.0.1, )",
               "autoReferenced": true
-            },
-            "MySql.Data": {
-              "target": "Package",
-              "version": "[8.3.0, )"
-            },
-            "MySqlConnector": {
-              "target": "Package",
-              "version": "[2.3.5, )"
             }
           },
           "imports": [
@@ -297,6 +285,10 @@
               "target": "Package",
               "version": "[8.0.1, )"
             },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -314,14 +306,6 @@
               "target": "Package",
               "version": "[8.0.1, )",
               "autoReferenced": true
-            },
-            "MySql.Data": {
-              "target": "Package",
-              "version": "[8.3.0, )"
-            },
-            "MySqlConnector": {
-              "target": "Package",
-              "version": "[2.3.5, )"
             }
           },
           "imports": [
@@ -357,6 +341,10 @@
               "target": "Package",
               "version": "[8.0.1, )"
             },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -368,14 +356,6 @@
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
               "version": "[8.0.3, )"
-            },
-            "MySql.Data": {
-              "target": "Package",
-              "version": "[8.3.0, )"
-            },
-            "MySqlConnector": {
-              "target": "Package",
-              "version": "[2.3.5, )"
             }
           },
           "imports": [

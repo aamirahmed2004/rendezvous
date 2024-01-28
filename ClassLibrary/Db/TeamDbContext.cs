@@ -18,7 +18,8 @@ namespace ClassLibrary.Db
         public DbSet<Activity> Activities { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string connectionString = "Server=localhost;Port=3306;Database=db;User=root;Password=changethis!;";
+            string connectionString = "Server=notmobmeet-do-user-15708106-0.c.db.ondigitalocean.com;Port=25060;Database=mob;User=doadmin;Password=AVNS_JlAi-afUsHwEZR07HVe;SslMode=Required;";
+
             optionsBuilder.UseMySQL(connectionString);
         }
 
