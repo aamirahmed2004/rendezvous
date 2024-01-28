@@ -5,7 +5,7 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hackathon", "Hackathon\Hackathon.csproj", "{E8C86C61-6CEF-4474-8486-29031C0E6805}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary", "ClassLibrary\ClassLibrary.csproj", "{5CCCB26F-48C8-4861-A3E1-97817CE1C267}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassLibrary", "ClassLibrary\ClassLibrary.csproj", "{5CCCB26F-48C8-4861-A3E1-97817CE1C267}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
