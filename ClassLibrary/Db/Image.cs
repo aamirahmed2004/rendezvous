@@ -12,6 +12,6 @@ namespace ClassLibrary.Db
     {
         [Key]
         public int id { get; set; }
-        public Blob Img { get; set; }
+        public byte[] Img { get; set; }
     }
 }

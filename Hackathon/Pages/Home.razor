@@ -9,17 +9,4 @@
 
 
 @code{
-    List<Activity> activities = new List<Activity>();
-    protected override async Task OnInitializedAsync() 
-    {
-        try
-        {
-            using var dbContext = _db.CreateDbContext();
-            activities = dbContext.Activities.Include(i => i.Profiles).ToList();
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine(ex.Message);
-        }
-    }
 }
