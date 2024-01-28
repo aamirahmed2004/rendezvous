@@ -1,0 +1,74 @@
+﻿@page "/user"
+@using ClassLibrary.Db
+@using Microsoft.EntityFrameworkCore
+@using Hackathon.Components
+@using Microsoft.AspNetCore.Components.Authorization
+@inject IDbContextFactory<TeamDbContext> _db
+@using System;
+@using System.Text.Json;
+@* @inject AuthenticationStateProvider _authenticationStateProvider *@
+
+<h3>User</h3>
+
+@if (user == null)
+{
+    <div>
+        <label>User ID:</label>
+        <input type="text" class="text-red-800" value="Loading..." readonly />
+    </div>
+    <div>
+        <label>Name:</label>
+        <input type="text" class="text-red-800" value="Loading..." readonly />
+    </div>
+    <div>
+        <label>Email:</label>
+        <input type="text" class="text-red-800" value="Loading..." readonly />
+    </div>
+}
+
+else
+{
+    <div>
+        <label>User ID:</label>
+        <input type="text" value="@user?.id" readonly />
+    </div>
+    <div>
+        <label>Name:</label>
+        <input type="text" value="@user?.Name" readonly />
+    </div>
+    <div>
+        <label>Email:</label>
+        <input type="text" value="@user?.Email" readonly />
+    </div>
+}
+
+
+@code {
+    private User user { get; set; }
+    private int userId { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            // string jsonFromFile = System.IO.File.ReadAllText("C:/Users/syeda/OneDrive/Desktop/BCHacks_5/hackathon/Hackathon/cookies.json");
+            // userId =  JsonSerializer.Deserialize<int>(jsonFromFile, new JsonSerializerOptions
+            //     {
+            //         PropertyNameCaseInsensitive = true
+            //     });
+
+            // Now you have user information from the JSON file
+
+            // Uncomment the following code when you have the necessary information to query the database
+            // var authenticationstate = await _authenticationstateprovider.getauthenticationstateasync();
+            // var userid = authenticationstate.user.findfirst("sub")?.value;
+            await using var db = await _db.CreateDbContextAsync();
+            user = await db.Users.FirstOrDefaultAsync(u => u.id == 1);
+            
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex);
+        }
+    }
+}
