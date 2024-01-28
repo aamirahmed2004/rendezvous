@@ -13,10 +13,10 @@
 else
 {
 
-    <div class="flex overflow-x-auto">
+    <div class="flex overflow-x-auto h-full gap-4">
         @foreach (Profile p in Profiles)
         {
-            <div class="w-vw">
+            <div class="min-w-full">
                 <CompProfile profile="@p" />
             </div>
         }
