@@ -27,73 +27,8 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        Activities = new List<Activity>
-        {
-            new Activity
-            {
-                isPrivate = false,
-                Name = "Outdoor Adventure",
-                Location = "Mountain Peak",
-                Time_start = DateTime.Parse("2024-01-27 10:00"),
-                Time_end = DateTime.Parse("2024-01-27 15:00"),
-                Age_rating = "18+",
-                Description = "An exciting outdoor adventure on the mountain peak.",
-                Profiles = new List<Profile>(),
-                Groups = new List<Group>()
-            },
-            new Activity
-            {
-                isPrivate = true,
-                Name = "Virtual Gaming Night",
-                Location = "Virtual",
-                Time_start = DateTime.Parse("2024-02-05 19:00"),
-                Time_end = DateTime.Parse("2024-02-05 22:00"),
-                Age_rating = "16+",
-                Description = "Join us for a fun-filled virtual gaming night with friends.",
-                Profiles = new List<Profile>(),
-                Groups = new List<Group>()
-            },
-            new Activity
-            {
-                isPrivate = false,
-                Name = "Stargazing Party",
-                Location = "Observatory",
-                Time_start = DateTime.Parse("2024-03-12 20:30"),
-                Time_end = DateTime.Parse("2024-03-12 23:00"),
-                Age_rating = "All Ages",
-                Description = "Experience the beauty of the night sky at our stargazing party.",
-                Profiles = new List<Profile>(),
-                Groups = new List<Group>()
-            },
-            new Activity
-            {
-                isPrivate = false,
-                Name = "Art Workshop",
-                Location = "Community Center",
-                Time_start = DateTime.Parse("2024-04-08 14:00"),
-                Time_end = DateTime.Parse("2024-04-08 17:00"),
-                Age_rating = "12+",
-                Description = "Unlock your creativity at our interactive art workshop.",
-                Profiles = new List<Profile>(),
-                Groups = new List<Group>()
-            },
-            new Activity
-            {
-                isPrivate = true,
-                Name = "Private Yoga Session",
-                Location = "Home",
-                Time_start = DateTime.Parse("2024-05-20 08:00"),
-                Time_end = DateTime.Parse("2024-05-20 09:30"),
-                Age_rating = "18+",
-                Description = "Indulge in a private yoga session for a rejuvenating experience.",
-                Profiles = new List<Profile>(),
-                Groups = new List<Group>()
-            }
-        };
 
         await using var db = await _db.CreateDbContextAsync();
-        await db.Activities.AddRangeAsync(Activities);
-        await db.SaveChangesAsync();
         Activities = await db.Activities.Include(i => i.Profiles).Include(i => i.Groups).ToListAsync();
     }
 }
