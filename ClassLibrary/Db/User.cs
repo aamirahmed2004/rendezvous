@@ -12,12 +12,12 @@ namespace ClassLibrary.Db
     {
         [Key]
         public int id { get; set; }
-        public string name { get; set; }
-        public string? nickname { get; set; }
-        public string email { get; set; }
-        public string password { get; set; }
-        public int age { get; set; }
-        public string? location { get; set; }
+        public string Name { get; set; }
+        public string? Nickname { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
+        public DateOnly BDate { get; set; }
+        public string? Location { get; set; }
         List<Profile>? Profiles { get; set; }
 
     }

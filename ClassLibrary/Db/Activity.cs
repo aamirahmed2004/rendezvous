@@ -21,7 +21,8 @@ namespace ClassLibrary.Db
         public DateTime Time_end { get; set; }
         public string Age_rating { get; set; }
         public string Description { get; set; }
-        public List<Profile> Profiles { get; set; }
+        public List<Profile>? Profiles { get; set; }
+        public List<Group>? Groups { get; set; }
 
 
     }
