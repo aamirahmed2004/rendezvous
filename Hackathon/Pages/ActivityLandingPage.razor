@@ -1,0 +1,74 @@
+﻿@page "/ActLandPage/{ActivityId:int}"
+
+@using ClassLibrary.Db
+@using Microsoft.EntityFrameworkCore
+@inject IDbContextFactory<TeamDbContext> _db
+
+@if(activity == null)
+{
+<div>Loading...</div>
+}
+
+else
+{
+	<div>
+    <header class="bg-zinc-900 p-4">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="text-white font-bold text-xl">NOT <br /> MobMeet</div>
+        </div>
+    </header>
+	<div class="flex flex-col my-7 gap-4 ">
+			<button class="p-4 bg-zinc-700 rounded-lg">Find People</button>
+			<button class="p-4 bg-zinc-700 rounded-lg">My Group </button>
+			<button class="p-4 bg-zinc-700 rounded-lg">Find Groups</button>
+	</div>
+
+	<div class="bg-zinc-700 rounded-lg">
+			<div class="flex justify-center px-5 py-2">
+			<h1 class="font-extrabold">@(activity.Name)</h1>
+		</div>
+			<div class="grid grid-cols-2 p-5 gap-2">
+				<div class="grid col-span-1">
+				<h2 class="font-semibold ">
+					@(activity.Time_start.Day), @(activity.Time_start.Month) - @(activity.Time_end.Day), @(activity.Time_end.Month)
+				</h2>
+				<div class="">
+					<img />
+				</div>
+				<div class="flex items-center">
+					<p>
+						@(activity.Profiles.Count) Participants,
+						@(activity.Groups.Count) Groups.
+					</p>
+				</div>
+			</div>
+			<div class="grid col-span-1">
+				<h2 class="font-semibold">
+					@(activity.Location)
+				</h2>
+				<p class="text-wrap">
+					@(activity.Description)
+				</p>
+			</div>
+
+		</div>	
+
+    </div>
+</div>
+}
+
+@code  {
+	[Parameter] public int ActivityId { get; set; }
+	public Activity activity { get; set; }
+	protected override async Task OnInitializedAsync()
+	{
+		try
+		{
+			await using var db = await _db.CreateDbContextAsync();
+			activity = await db.Activities.Where(w => w.id == ActivityId).Include(i => i.Profiles).Include(i => i.Groups).FirstOrDefaultAsync();
+		}catch(Exception e)
+		{
+			Console.WriteLine(e.Message);
+		}
+	}
+}

@@ -1,31 +1,36 @@
 ﻿@using ClassLibrary.Db
-<div class="grid grid-cols-4 px-5 py-5 rounded-[15px] justify-start items-start text-xs bg-neutral-700 mx-2" >
-	<div class="grid grid-rows-3 col-span-3">
-		<div>
-			<h1 class="font-extrabold">
-				@(activity.Name)
-			</h1>
-			
-			
-			@(activity.Time_start.Day), @(activity.Time_start.Month) - @(activity.Time_end.Day), @(activity.Time_end.Month)
+
+<NavLink class="nav-link" href="@($"/ActLandPage/{activity.id}")" Match="NavLinkMatch.All">
+	<div class="grid grid-cols-4 px-5 py-5 rounded-[15px] justify-start items-start text-xs bg-neutral-700 mx-2">
+
+		<div class="grid grid-rows-3 col-span-3">
+			<div>
+				<h1 class="font-extrabold">
+					@(activity.Name)
+				</h1>
+
+
+				@(activity.Time_start.Day), @(activity.Time_start.Month) - @(activity.Time_end.Day), @(activity.Time_end.Month)
+			</div>
+
+			<div>
+				@(activity.Location)
+			</div>
+
+			<div class="break-words">
+				@(activity.Profiles.Count) Participants,
+				@(activity.Groups.Count) Groups.
+			</div>
+			<div class="text-wrap">
+				@(activity.Description)
+			</div>
 		</div>
-		
-		<div>
-			@(activity.Location)
-		</div>
-		
-		<div class="break-words">
-			@(activity.Profiles.Count) Participants,
-			@(activity.Groups.Count) Groups.
-		</div>
-		<div class="text-wrap">
-			@(activity.Description)
+		<div class="grid col-span-1">
+			<h1>@(activity.Age_rating)</h1>
 		</div>
 	</div>
-	<div class="grid col-span-1">
-		<h1>@(activity.Age_rating)</h1>
-	</div>
-</div>
+
+</NavLink>
 <br />
 
 @code {
