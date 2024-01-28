@@ -1,5 +1,6 @@
 ﻿
 using ClassLibrary.Db;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
 namespace Hackathon
@@ -17,7 +18,8 @@ namespace Hackathon
                 });
 
             builder.Services.AddMauiBlazorWebView();
-            builder.Services.AddDbContext<TeamDbContext>();
+            builder.Services.AddDbContextFactory<TeamDbContext>(options =>
+    options.UseMySQL("your-connection-string"));
 
 #if DEBUG
             builder.Services.AddBlazorWebViewDeveloperTools();
