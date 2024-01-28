@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
@@ -10,7 +11,7 @@ namespace ClassLibrary.Db
 {
     public class DbSeed
     {
-        public static void SeedActivities(ModelBuilder modelBuilder)
+        public static List<Activity> SeedActivities(ModelBuilder modelBuilder)
         {
             List<Activity> activitiesList = new List<Activity>
             {
@@ -137,8 +138,8 @@ namespace ClassLibrary.Db
             };
 
             modelBuilder.Entity<Activity>().HasData(activitiesList);
-            
-        }
+			return activitiesList;
+		}
 
         public static List<User> SeedUsers(ModelBuilder modelBuilder)
         {
@@ -169,7 +170,6 @@ namespace ClassLibrary.Db
 
         public static void SeedProfile(ModelBuilder modelBuilder, List<User> users, List<InterestTag> tags)
         {
-
             int i = 1;
             foreach(User user in users)
             {
@@ -196,6 +196,7 @@ namespace ClassLibrary.Db
                 };
                 modelBuilder.Entity<Profile>().HasData(profile);
                 modelBuilder.Entity<Profile>().HasData(profile2);
+                
             }
             
         }
@@ -231,6 +232,32 @@ namespace ClassLibrary.Db
             };
             modelBuilder.Entity<InterestTag>().HasData(tags);
             return tags;
+        }
+
+        public static void SeedGroups(ModelBuilder modelBuilder, List<Activity> activities)
+        {
+			int i = 1;
+			foreach(Activity activity in activities)
+            {
+				Group group = new Group()
+                {
+					id = i,
+					ActivityId = activity.id,
+					Name = "Group" + i,
+					About = "We are a group" + i++,
+					ReqNumUsers = 10
+				};
+				Group group2 = new Group()
+                {
+					id = i,
+					ActivityId = activity.id,
+					Name = "Group" + i,
+					About = "We are a group" + i++,
+					ReqNumUsers = 10
+				};
+				modelBuilder.Entity<Group>().HasData(group);
+				modelBuilder.Entity<Group>().HasData(group2);
+			}   
         }
     }
 }

@@ -1,0 +1,37 @@
+﻿@page "/Groups/{ActivityId:int}"
+@using ClassLibrary.Db
+@using Hackathon.Components
+@using Microsoft.EntityFrameworkCore
+@inject IDbContextFactory<TeamDbContext> _db
+<div>
+    <h1>Groups</h1>
+</div>
+@if (Groups == null)
+{
+    <div>Loading...</div>
+}
+else
+{
+    @foreach (Group g in Groups)
+    {
+        <CompGroup group="@g"/>
+    }
+}
+@code {
+    [Parameter] public int ActivityId { get; set; }
+    public List<Group> Groups { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            await using var db = await _db.CreateDbContextAsync();
+            Groups = await db.Groups.Where(i => i.ActivityId == ActivityId).Include(i => i.Profiles).ToListAsync();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+        }
+    }
+
+}

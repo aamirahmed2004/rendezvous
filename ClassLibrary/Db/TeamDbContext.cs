@@ -37,10 +37,11 @@ namespace ClassLibrary.Db
                 .Property(x => x.Image)
                 .HasColumnType("blob");
 
-            DbSeed.SeedActivities(modelBuilder);
+            List<Activity> activites = DbSeed.SeedActivities(modelBuilder);
             List<User> users = DbSeed.SeedUsers(modelBuilder);
             List<InterestTag> tags = DbSeed.SeedTags(modelBuilder);
             DbSeed.SeedProfile(modelBuilder, users, tags);
+            DbSeed.SeedGroups(modelBuilder, activites);
             
         }
 

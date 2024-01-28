@@ -1,0 +1,47 @@
+﻿@using ClassLibrary.Db
+@using Microsoft.EntityFrameworkCore
+@inject IDbContextFactory<TeamDbContext> _db
+
+<div class="grid grid-cols-4 px-5 py-5 rounded-[15px] justify-start items-start text-xs bg-neutral-700 mx-2">
+
+	<div class="grid grid-rows-3 col-span-3">
+		<div>
+			<h1 class="font-extrabold">
+				@(group.Name)
+			</h1>
+		</div>
+
+		<div class="break-words">
+			Requires: @(group.ReqNumUsers) Users
+			<br/>
+			Contains: @(group.Profiles.Count) Users
+		</div>
+		<div class="text-wrap">
+			@(group.About)
+		</div>
+		<button class="bg-green-600 text-white font-bold py-2 px-4 border border-blue-700 rounded @(joined?"opacity-50 cursor-not-allowed":"")" disabled="@joined" @onclick="JoinGroup">Join Group</button>
+	</div>
+</div>
+
+<br />
+
+@code {
+	[Parameter] public Group group { get; set; }
+	private bool joined { get; set; } = false;
+	protected override async Task OnInitializedAsync()
+	{
+
+	}
+
+	private async Task JoinGroup()
+    {
+        await using var db = await _db.CreateDbContextAsync();
+        var profile = await db.Profiles.FirstOrDefaultAsync(i => i.UserId == 1);
+        if (profile != null)
+        {
+            group.Profiles.Add(profile);
+            await db.SaveChangesAsync();
+			joined = true;
+        }
+    }
+}
