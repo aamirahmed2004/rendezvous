@@ -14,7 +14,7 @@ else
 	<div>
     <header class="bg-zinc-900 p-4">
         <div class="container mx-auto flex items-center justify-between">
-            <div class="text-white font-bold text-xl">NOT <br /> MobMeet</div>
+				<div class="text-white font-bold text-xl">Rendezvous</div>
         </div>
     </header>
 	<div class="flex flex-col my-7 gap-4 ">
@@ -30,8 +30,9 @@ else
 			<div class="grid grid-cols-2 p-5 gap-2">
 				<div class="grid col-span-1">
 				<h2 class="font-semibold ">
+					<em>
 					@(activity.Time_start.Day), @(activity.Time_start.Month) - @(activity.Time_end.Day), @(activity.Time_end.Month)
-				</h2>
+				</em></h2>
 				<div class="">
 					<img />
 				</div>
@@ -43,9 +44,9 @@ else
 				</div>
 			</div>
 			<div class="grid col-span-1">
-				<h2 class="font-semibold">
+				<h2 class="font-semibold"> <em>
 					@(activity.Location)
-				</h2>
+				</em></h2>
 				<p class="text-wrap">
 					@(activity.Description)
 				</p>
