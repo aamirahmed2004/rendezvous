@@ -1,0 +1,45 @@
+﻿@page "/user"
+@using ClassLibrary.Db
+@using Microsoft.EntityFrameworkCore
+@using Hackathon.Components
+@using Microsoft.AspNetCore.Components.Authorization
+@inject IDbContextFactory<TeamDbContext> _db
+@inject AuthenticationStateProvider _authenticationStateProvider
+
+<h3>User Details</h3>
+
+<div>
+    <label>User ID:</label>
+    <input type="text" value="@user?.id" readonly />
+</div>
+<div>
+    <label>Name:</label>
+    <input type="text" value="@user?.Name" readonly />
+</div>
+<div>
+    <label>Email:</label>
+    <input type="text" value="@user?.Email" readonly />
+</div>
+
+@code {
+    private User user;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            var authenticationState = await _authenticationStateProvider.GetAuthenticationStateAsync();
+            var userId = authenticationState.User.FindFirst("sub")?.Value;
+
+            if (userId != null)
+            {
+                await using var db = await _db.CreateDbContextAsync();
+                user = await db.Users.FirstOrDefaultAsync(u => u.id == int.Parse(userId));
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex);
+        }
+    }
+}

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ankkit\\source\\repos\\mrichards03\\hackathon\\Hackathon\\Hackathon.csproj": {}
+    "C:\\Users\\syeda\\OneDrive\\Desktop\\BCHacks_5\\hackathon\\Hackathon\\Hackathon.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ankkit\\source\\repos\\mrichards03\\hackathon\\ClassLibrary\\ClassLibrary.csproj": {
+    "C:\\Users\\syeda\\OneDrive\\Desktop\\BCHacks_5\\hackathon\\ClassLibrary\\ClassLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ankkit\\source\\repos\\mrichards03\\hackathon\\ClassLibrary\\ClassLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\syeda\\OneDrive\\Desktop\\BCHacks_5\\hackathon\\ClassLibrary\\ClassLibrary.csproj",
         "projectName": "ClassLibrary",
-        "projectPath": "C:\\Users\\Ankkit\\source\\repos\\mrichards03\\hackathon\\ClassLibrary\\ClassLibrary.csproj",
-        "packagesPath": "C:\\Users\\Ankkit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ankkit\\source\\repos\\mrichards03\\hackathon\\ClassLibrary\\obj\\",
+        "projectPath": "C:\\Users\\syeda\\OneDrive\\Desktop\\BCHacks_5\\hackathon\\ClassLibrary\\ClassLibrary.csproj",
+        "packagesPath": "C:\\Users\\syeda\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\syeda\\OneDrive\\Desktop\\BCHacks_5\\hackathon\\ClassLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Ankkit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\syeda\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -94,21 +94,21 @@
         }
       }
     },
-    "C:\\Users\\Ankkit\\source\\repos\\mrichards03\\hackathon\\Hackathon\\Hackathon.csproj": {
+    "C:\\Users\\syeda\\OneDrive\\Desktop\\BCHacks_5\\hackathon\\Hackathon\\Hackathon.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ankkit\\source\\repos\\mrichards03\\hackathon\\Hackathon\\Hackathon.csproj",
+        "projectUniqueName": "C:\\Users\\syeda\\OneDrive\\Desktop\\BCHacks_5\\hackathon\\Hackathon\\Hackathon.csproj",
         "projectName": "Hackathon",
-        "projectPath": "C:\\Users\\Ankkit\\source\\repos\\mrichards03\\hackathon\\Hackathon\\Hackathon.csproj",
-        "packagesPath": "C:\\Users\\Ankkit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ankkit\\source\\repos\\mrichards03\\hackathon\\Hackathon\\obj\\",
+        "projectPath": "C:\\Users\\syeda\\OneDrive\\Desktop\\BCHacks_5\\hackathon\\Hackathon\\Hackathon.csproj",
+        "packagesPath": "C:\\Users\\syeda\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\syeda\\OneDrive\\Desktop\\BCHacks_5\\hackathon\\Hackathon\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Ankkit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\syeda\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -127,32 +127,32 @@
           "net8.0-android34.0": {
             "targetAlias": "net8.0-android",
             "projectReferences": {
-              "C:\\Users\\Ankkit\\source\\repos\\mrichards03\\hackathon\\ClassLibrary\\ClassLibrary.csproj": {
-                "projectPath": "C:\\Users\\Ankkit\\source\\repos\\mrichards03\\hackathon\\ClassLibrary\\ClassLibrary.csproj"
+              "C:\\Users\\syeda\\OneDrive\\Desktop\\BCHacks_5\\hackathon\\ClassLibrary\\ClassLibrary.csproj": {
+                "projectPath": "C:\\Users\\syeda\\OneDrive\\Desktop\\BCHacks_5\\hackathon\\ClassLibrary\\ClassLibrary.csproj"
               }
             }
           },
           "net8.0-ios17.2": {
             "targetAlias": "net8.0-ios",
             "projectReferences": {
-              "C:\\Users\\Ankkit\\source\\repos\\mrichards03\\hackathon\\ClassLibrary\\ClassLibrary.csproj": {
-                "projectPath": "C:\\Users\\Ankkit\\source\\repos\\mrichards03\\hackathon\\ClassLibrary\\ClassLibrary.csproj"
+              "C:\\Users\\syeda\\OneDrive\\Desktop\\BCHacks_5\\hackathon\\ClassLibrary\\ClassLibrary.csproj": {
+                "projectPath": "C:\\Users\\syeda\\OneDrive\\Desktop\\BCHacks_5\\hackathon\\ClassLibrary\\ClassLibrary.csproj"
               }
             }
           },
           "net8.0-maccatalyst17.2": {
             "targetAlias": "net8.0-maccatalyst",
             "projectReferences": {
-              "C:\\Users\\Ankkit\\source\\repos\\mrichards03\\hackathon\\ClassLibrary\\ClassLibrary.csproj": {
-                "projectPath": "C:\\Users\\Ankkit\\source\\repos\\mrichards03\\hackathon\\ClassLibrary\\ClassLibrary.csproj"
+              "C:\\Users\\syeda\\OneDrive\\Desktop\\BCHacks_5\\hackathon\\ClassLibrary\\ClassLibrary.csproj": {
+                "projectPath": "C:\\Users\\syeda\\OneDrive\\Desktop\\BCHacks_5\\hackathon\\ClassLibrary\\ClassLibrary.csproj"
               }
             }
           },
           "net8.0-windows10.0.19041": {
             "targetAlias": "net8.0-windows10.0.19041.0",
             "projectReferences": {
-              "C:\\Users\\Ankkit\\source\\repos\\mrichards03\\hackathon\\ClassLibrary\\ClassLibrary.csproj": {
-                "projectPath": "C:\\Users\\Ankkit\\source\\repos\\mrichards03\\hackathon\\ClassLibrary\\ClassLibrary.csproj"
+              "C:\\Users\\syeda\\OneDrive\\Desktop\\BCHacks_5\\hackathon\\ClassLibrary\\ClassLibrary.csproj": {
+                "projectPath": "C:\\Users\\syeda\\OneDrive\\Desktop\\BCHacks_5\\hackathon\\ClassLibrary\\ClassLibrary.csproj"
               }
             }
           }
@@ -167,6 +167,10 @@
         "net8.0-android34.0": {
           "targetAlias": "net8.0-android",
           "dependencies": {
+            "Microsoft.AspNetCore.Components.Authorization": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
               "version": "[8.0.3, )"
@@ -222,6 +226,10 @@
         "net8.0-ios17.2": {
           "targetAlias": "net8.0-ios",
           "dependencies": {
+            "Microsoft.AspNetCore.Components.Authorization": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
               "version": "[8.0.3, )"
@@ -277,6 +285,10 @@
         "net8.0-maccatalyst17.2": {
           "targetAlias": "net8.0-maccatalyst",
           "dependencies": {
+            "Microsoft.AspNetCore.Components.Authorization": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
               "version": "[8.0.3, )"
@@ -333,6 +345,10 @@
         "net8.0-windows10.0.19041": {
           "targetAlias": "net8.0-windows10.0.19041.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Components.Authorization": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
               "version": "[8.0.3, )"
