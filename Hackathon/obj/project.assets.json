@@ -263,10 +263,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
@@ -1002,22 +1002,6 @@
         },
         "runtime": {
           "lib/net8.0/MySql.EntityFrameworkCore.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "MySqlConnector/2.3.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
-        },
-        "compile": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/MySqlConnector.dll": {
             "related": ".xml"
           }
         }
@@ -3047,9 +3031,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.Data": "8.3.0",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "MySqlConnector": "2.3.5"
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.1",
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -3321,10 +3304,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
@@ -4038,22 +4021,6 @@
         },
         "runtime": {
           "lib/net8.0/MySql.EntityFrameworkCore.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "MySqlConnector/2.3.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
-        },
-        "compile": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/MySqlConnector.dll": {
             "related": ".xml"
           }
         }
@@ -6041,9 +6008,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.Data": "8.3.0",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "MySqlConnector": "2.3.5"
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.1",
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -6315,10 +6281,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
@@ -7032,22 +6998,6 @@
         },
         "runtime": {
           "lib/net8.0/MySql.EntityFrameworkCore.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "MySqlConnector/2.3.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
-        },
-        "compile": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/MySqlConnector.dll": {
             "related": ".xml"
           }
         }
@@ -9035,9 +8985,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.Data": "8.3.0",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "MySqlConnector": "2.3.5"
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.1",
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -9309,10 +9258,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
@@ -10026,22 +9975,6 @@
         },
         "runtime": {
           "lib/net8.0/MySql.EntityFrameworkCore.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "MySqlConnector/2.3.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
-        },
-        "compile": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/MySqlConnector.dll": {
             "related": ".xml"
           }
         }
@@ -12029,9 +11962,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.Data": "8.3.0",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "MySqlConnector": "2.3.5"
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.1",
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -12303,10 +12235,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
@@ -13020,22 +12952,6 @@
         },
         "runtime": {
           "lib/net8.0/MySql.EntityFrameworkCore.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "MySqlConnector/2.3.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
-        },
-        "compile": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/MySqlConnector.dll": {
             "related": ".xml"
           }
         }
@@ -15023,9 +14939,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.Data": "8.3.0",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "MySqlConnector": "2.3.5"
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.1",
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -15297,10 +15212,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
@@ -16014,22 +15929,6 @@
         },
         "runtime": {
           "lib/net8.0/MySql.EntityFrameworkCore.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "MySqlConnector/2.3.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
-        },
-        "compile": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/MySqlConnector.dll": {
             "related": ".xml"
           }
         }
@@ -18017,9 +17916,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.Data": "8.3.0",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "MySqlConnector": "2.3.5"
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.1",
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -18291,10 +18189,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
@@ -19008,22 +18906,6 @@
         },
         "runtime": {
           "lib/net8.0/MySql.EntityFrameworkCore.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "MySqlConnector/2.3.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
-        },
-        "compile": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/MySqlConnector.dll": {
             "related": ".xml"
           }
         }
@@ -21011,9 +20893,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.Data": "8.3.0",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "MySqlConnector": "2.3.5"
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.1",
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -21285,10 +21166,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
@@ -22009,22 +21890,6 @@
         },
         "runtime": {
           "lib/net8.0/MySql.EntityFrameworkCore.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "MySqlConnector/2.3.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
-        },
-        "compile": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/MySqlConnector.dll": {
             "related": ".xml"
           }
         }
@@ -24012,9 +23877,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.Data": "8.3.0",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "MySqlConnector": "2.3.5"
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.1",
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -24273,10 +24137,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
@@ -25036,22 +24900,6 @@
           }
         }
       },
-      "MySqlConnector/2.3.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
-        },
-        "compile": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -25432,9 +25280,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.Data": "8.3.0",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "MySqlConnector": "2.3.5"
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.1",
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -25693,10 +25540,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
@@ -26428,22 +26275,6 @@
           }
         }
       },
-      "MySqlConnector/2.3.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
-        },
-        "compile": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -26875,9 +26706,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.Data": "8.3.0",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "MySqlConnector": "2.3.5"
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.1",
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -27136,10 +26966,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
@@ -27871,22 +27701,6 @@
           }
         }
       },
-      "MySqlConnector/2.3.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
-        },
-        "compile": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -28318,9 +28132,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.Data": "8.3.0",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "MySqlConnector": "2.3.5"
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.1",
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -28579,10 +28392,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
@@ -29314,22 +29127,6 @@
           }
         }
       },
-      "MySqlConnector/2.3.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
-        },
-        "compile": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -29761,9 +29558,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.Data": "8.3.0",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "MySqlConnector": "2.3.5"
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.1",
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -30022,10 +29818,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
@@ -30757,22 +30553,6 @@
           }
         }
       },
-      "MySqlConnector/2.3.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
-        },
-        "compile": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -31204,9 +30984,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.Data": "8.3.0",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "MySqlConnector": "2.3.5"
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.1",
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -31465,10 +31244,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
@@ -32200,22 +31979,6 @@
           }
         }
       },
-      "MySqlConnector/2.3.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
-        },
-        "compile": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -32647,9 +32410,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.Data": "8.3.0",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "MySqlConnector": "2.3.5"
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.1",
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -32908,10 +32670,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
@@ -33643,22 +33405,6 @@
           }
         }
       },
-      "MySqlConnector/2.3.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
-        },
-        "compile": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -34090,9 +33836,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.Data": "8.3.0",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "MySqlConnector": "2.3.5"
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.1",
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -34351,10 +34096,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
@@ -35093,22 +34838,6 @@
           }
         }
       },
-      "MySqlConnector/2.3.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
-        },
-        "compile": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -35524,9 +35253,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.Data": "8.3.0",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "MySqlConnector": "2.3.5"
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.1",
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -35785,10 +35513,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
@@ -36548,22 +36276,6 @@
           }
         }
       },
-      "MySqlConnector/2.3.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
-        },
-        "compile": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -36944,9 +36656,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.Data": "8.3.0",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "MySqlConnector": "2.3.5"
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.1",
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -37205,10 +36916,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
@@ -37940,22 +37651,6 @@
           }
         }
       },
-      "MySqlConnector/2.3.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
-        },
-        "compile": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -38387,9 +38082,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.Data": "8.3.0",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "MySqlConnector": "2.3.5"
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.1",
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -38648,10 +38342,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
@@ -39383,22 +39077,6 @@
           }
         }
       },
-      "MySqlConnector/2.3.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
-        },
-        "compile": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -39830,9 +39508,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.Data": "8.3.0",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "MySqlConnector": "2.3.5"
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.1",
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -40091,10 +39768,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
@@ -40826,22 +40503,6 @@
           }
         }
       },
-      "MySqlConnector/2.3.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
-        },
-        "compile": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -41273,9 +40934,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.Data": "8.3.0",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "MySqlConnector": "2.3.5"
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.1",
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -41534,10 +41194,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
@@ -42269,22 +41929,6 @@
           }
         }
       },
-      "MySqlConnector/2.3.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
-        },
-        "compile": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -42716,9 +42360,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.Data": "8.3.0",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "MySqlConnector": "2.3.5"
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.1",
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -42977,10 +42620,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
@@ -43712,22 +43355,6 @@
           }
         }
       },
-      "MySqlConnector/2.3.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
-        },
-        "compile": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -44159,9 +43786,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.Data": "8.3.0",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "MySqlConnector": "2.3.5"
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.1",
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -44420,10 +44046,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
@@ -45155,22 +44781,6 @@
           }
         }
       },
-      "MySqlConnector/2.3.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
-        },
-        "compile": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -45602,9 +45212,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.Data": "8.3.0",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "MySqlConnector": "2.3.5"
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.1",
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -45863,10 +45472,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
@@ -46605,22 +46214,6 @@
           }
         }
       },
-      "MySqlConnector/2.3.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
-        },
-        "compile": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -47036,9 +46629,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.Data": "8.3.0",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "MySqlConnector": "2.3.5"
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.1",
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -47297,10 +46889,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
@@ -48203,22 +47795,6 @@
           }
         }
       },
-      "MySqlConnector/2.3.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
-        },
-        "compile": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -48599,9 +48175,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.Data": "8.3.0",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "MySqlConnector": "2.3.5"
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.1",
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -48860,10 +48435,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
@@ -49710,22 +49285,6 @@
           }
         }
       },
-      "MySqlConnector/2.3.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
-        },
-        "compile": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -50157,9 +49716,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.Data": "8.3.0",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "MySqlConnector": "2.3.5"
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.1",
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -50418,10 +49976,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
@@ -51268,22 +50826,6 @@
           }
         }
       },
-      "MySqlConnector/2.3.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
-        },
-        "compile": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -51715,9 +51257,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.Data": "8.3.0",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "MySqlConnector": "2.3.5"
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.1",
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -51976,10 +51517,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
@@ -52826,22 +52367,6 @@
           }
         }
       },
-      "MySqlConnector/2.3.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
-        },
-        "compile": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -53273,9 +52798,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.Data": "8.3.0",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "MySqlConnector": "2.3.5"
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.1",
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -53534,10 +53058,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
@@ -54384,22 +53908,6 @@
           }
         }
       },
-      "MySqlConnector/2.3.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
-        },
-        "compile": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -54831,9 +54339,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.Data": "8.3.0",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "MySqlConnector": "2.3.5"
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.1",
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -55092,10 +54599,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
@@ -55942,22 +55449,6 @@
           }
         }
       },
-      "MySqlConnector/2.3.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
-        },
-        "compile": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -56389,9 +55880,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.Data": "8.3.0",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "MySqlConnector": "2.3.5"
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.1",
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -56650,10 +56140,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
@@ -57500,22 +56990,6 @@
           }
         }
       },
-      "MySqlConnector/2.3.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
-        },
-        "compile": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -57947,9 +57421,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.Data": "8.3.0",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "MySqlConnector": "2.3.5"
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.1",
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -58208,10 +57681,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/8.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
@@ -59071,22 +58544,6 @@
           }
         }
       },
-      "MySqlConnector/2.3.5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1"
-        },
-        "compile": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.any.System.IO/4.3.0": {
         "type": "package",
         "compile": {
@@ -59502,9 +58959,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.3",
           "Microsoft.EntityFrameworkCore": "8.0.1",
-          "MySql.Data": "8.3.0",
-          "MySql.EntityFrameworkCore": "8.0.0",
-          "MySqlConnector": "2.3.5"
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.1",
+          "MySql.EntityFrameworkCore": "8.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary.dll": {}
@@ -59836,17 +59292,17 @@
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Relational/8.0.0": {
-      "sha512": "fFKkr24cYc7Zw5T6DC4tEyOEPgPbq23BBmym1r9kn4ET9F3HKaetpOeQtV2RryYyUxEeNkJuxgfiZHTisqZc+A==",
+    "Microsoft.EntityFrameworkCore.Relational/8.0.1": {
+      "sha512": "uL1tO14kbsi0EqtfvElGJ68irUlu2DbkTMKz4+8WvVc1TV2GwVgfwQWv7uwDqsB5+JK9alfP3tZjHkWiSpk3oA==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.relational/8.0.0",
+      "path": "microsoft.entityframeworkcore.relational/8.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net8.0/Microsoft.EntityFrameworkCore.Relational.dll",
         "lib/net8.0/Microsoft.EntityFrameworkCore.Relational.xml",
-        "microsoft.entityframeworkcore.relational.8.0.0.nupkg.sha512",
+        "microsoft.entityframeworkcore.relational.8.0.1.nupkg.sha512",
         "microsoft.entityframeworkcore.relational.nuspec"
       ]
     },
@@ -62377,35 +61833,6 @@
         "logo-mysql-170x115.png",
         "mysql.entityframeworkcore.8.0.0.nupkg.sha512",
         "mysql.entityframeworkcore.nuspec"
-      ]
-    },
-    "MySqlConnector/2.3.5": {
-      "sha512": "AmEfUPkFl+Ev6jJ8Dhns3CYHBfD12RHzGYWuLt6DfG6/af6YvOMyPz74ZPPjBYQGRJkumD2Z48Kqm8s5DJuhLA==",
-      "type": "package",
-      "path": "mysqlconnector/2.3.5",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "lib/net462/MySqlConnector.dll",
-        "lib/net462/MySqlConnector.xml",
-        "lib/net471/MySqlConnector.dll",
-        "lib/net471/MySqlConnector.xml",
-        "lib/net48/MySqlConnector.dll",
-        "lib/net48/MySqlConnector.xml",
-        "lib/net6.0/MySqlConnector.dll",
-        "lib/net6.0/MySqlConnector.xml",
-        "lib/net7.0/MySqlConnector.dll",
-        "lib/net7.0/MySqlConnector.xml",
-        "lib/net8.0/MySqlConnector.dll",
-        "lib/net8.0/MySqlConnector.xml",
-        "lib/netstandard2.0/MySqlConnector.dll",
-        "lib/netstandard2.0/MySqlConnector.xml",
-        "lib/netstandard2.1/MySqlConnector.dll",
-        "lib/netstandard2.1/MySqlConnector.xml",
-        "logo.png",
-        "mysqlconnector.2.3.5.nupkg.sha512",
-        "mysqlconnector.nuspec"
       ]
     },
     "runtime.any.System.IO/4.3.0": {
@@ -65728,65 +65155,61 @@
       "ClassLibrary >= 1.0.0",
       "Microsoft.AspNetCore.Components.WebView.Maui >= 8.0.3",
       "Microsoft.EntityFrameworkCore >= 8.0.1",
+      "Microsoft.EntityFrameworkCore.Relational >= 8.0.1",
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.3",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.3",
-      "Microsoft.NET.ILLink.Tasks >= 8.0.1",
-      "MySql.Data >= 8.3.0",
-      "MySqlConnector >= 2.3.5"
+      "Microsoft.NET.ILLink.Tasks >= 8.0.1"
     ],
     "net8.0-ios17.2": [
       "ClassLibrary >= 1.0.0",
       "Microsoft.AspNetCore.Components.WebView.Maui >= 8.0.3",
       "Microsoft.EntityFrameworkCore >= 8.0.1",
+      "Microsoft.EntityFrameworkCore.Relational >= 8.0.1",
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.3",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.3",
-      "Microsoft.NET.ILLink.Tasks >= 8.0.1",
-      "MySql.Data >= 8.3.0",
-      "MySqlConnector >= 2.3.5"
+      "Microsoft.NET.ILLink.Tasks >= 8.0.1"
     ],
     "net8.0-maccatalyst17.2": [
       "ClassLibrary >= 1.0.0",
       "Microsoft.AspNetCore.Components.WebView.Maui >= 8.0.3",
       "Microsoft.EntityFrameworkCore >= 8.0.1",
+      "Microsoft.EntityFrameworkCore.Relational >= 8.0.1",
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.3",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.3",
-      "Microsoft.NET.ILLink.Tasks >= 8.0.1",
-      "MySql.Data >= 8.3.0",
-      "MySqlConnector >= 2.3.5"
+      "Microsoft.NET.ILLink.Tasks >= 8.0.1"
     ],
     "net8.0-windows10.0.19041": [
       "ClassLibrary >= 1.0.0",
       "Microsoft.AspNetCore.Components.WebView.Maui >= 8.0.3",
       "Microsoft.EntityFrameworkCore >= 8.0.1",
+      "Microsoft.EntityFrameworkCore.Relational >= 8.0.1",
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.3",
-      "Microsoft.Maui.Controls.Compatibility >= 8.0.3",
-      "MySql.Data >= 8.3.0",
-      "MySqlConnector >= 2.3.5"
+      "Microsoft.Maui.Controls.Compatibility >= 8.0.3"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ankkit\\.nuget\\packages\\": {},
+    "C:\\Users\\user\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ankkit\\source\\repos\\mrichards03\\hackathon\\Hackathon\\Hackathon.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Documents\\Github\\Hackathon\\Hackathon\\Hackathon.csproj",
       "projectName": "Hackathon",
-      "projectPath": "C:\\Users\\Ankkit\\source\\repos\\mrichards03\\hackathon\\Hackathon\\Hackathon.csproj",
-      "packagesPath": "C:\\Users\\Ankkit\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ankkit\\source\\repos\\mrichards03\\hackathon\\Hackathon\\obj\\",
+      "projectPath": "C:\\Users\\user\\Documents\\Github\\Hackathon\\Hackathon\\Hackathon.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\Documents\\Github\\Hackathon\\Hackathon\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Ankkit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -65805,32 +65228,32 @@
         "net8.0-android34.0": {
           "targetAlias": "net8.0-android",
           "projectReferences": {
-            "C:\\Users\\Ankkit\\source\\repos\\mrichards03\\hackathon\\ClassLibrary\\ClassLibrary.csproj": {
-              "projectPath": "C:\\Users\\Ankkit\\source\\repos\\mrichards03\\hackathon\\ClassLibrary\\ClassLibrary.csproj"
+            "C:\\Users\\user\\Documents\\Github\\Hackathon\\ClassLibrary\\ClassLibrary.csproj": {
+              "projectPath": "C:\\Users\\user\\Documents\\Github\\Hackathon\\ClassLibrary\\ClassLibrary.csproj"
             }
           }
         },
         "net8.0-ios17.2": {
           "targetAlias": "net8.0-ios",
           "projectReferences": {
-            "C:\\Users\\Ankkit\\source\\repos\\mrichards03\\hackathon\\ClassLibrary\\ClassLibrary.csproj": {
-              "projectPath": "C:\\Users\\Ankkit\\source\\repos\\mrichards03\\hackathon\\ClassLibrary\\ClassLibrary.csproj"
+            "C:\\Users\\user\\Documents\\Github\\Hackathon\\ClassLibrary\\ClassLibrary.csproj": {
+              "projectPath": "C:\\Users\\user\\Documents\\Github\\Hackathon\\ClassLibrary\\ClassLibrary.csproj"
             }
           }
         },
         "net8.0-maccatalyst17.2": {
           "targetAlias": "net8.0-maccatalyst",
           "projectReferences": {
-            "C:\\Users\\Ankkit\\source\\repos\\mrichards03\\hackathon\\ClassLibrary\\ClassLibrary.csproj": {
-              "projectPath": "C:\\Users\\Ankkit\\source\\repos\\mrichards03\\hackathon\\ClassLibrary\\ClassLibrary.csproj"
+            "C:\\Users\\user\\Documents\\Github\\Hackathon\\ClassLibrary\\ClassLibrary.csproj": {
+              "projectPath": "C:\\Users\\user\\Documents\\Github\\Hackathon\\ClassLibrary\\ClassLibrary.csproj"
             }
           }
         },
         "net8.0-windows10.0.19041": {
           "targetAlias": "net8.0-windows10.0.19041.0",
           "projectReferences": {
-            "C:\\Users\\Ankkit\\source\\repos\\mrichards03\\hackathon\\ClassLibrary\\ClassLibrary.csproj": {
-              "projectPath": "C:\\Users\\Ankkit\\source\\repos\\mrichards03\\hackathon\\ClassLibrary\\ClassLibrary.csproj"
+            "C:\\Users\\user\\Documents\\Github\\Hackathon\\ClassLibrary\\ClassLibrary.csproj": {
+              "projectPath": "C:\\Users\\user\\Documents\\Github\\Hackathon\\ClassLibrary\\ClassLibrary.csproj"
             }
           }
         }
@@ -65853,6 +65276,10 @@
             "target": "Package",
             "version": "[8.0.1, )"
           },
+          "Microsoft.EntityFrameworkCore.Relational": {
+            "target": "Package",
+            "version": "[8.0.1, )"
+          },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "[8.0.0, )"
@@ -65870,14 +65297,6 @@
             "target": "Package",
             "version": "[8.0.1, )",
             "autoReferenced": true
-          },
-          "MySql.Data": {
-            "target": "Package",
-            "version": "[8.3.0, )"
-          },
-          "MySqlConnector": {
-            "target": "Package",
-            "version": "[2.3.5, )"
           }
         },
         "imports": [
@@ -65912,6 +65331,10 @@
             "target": "Package",
             "version": "[8.0.1, )"
           },
+          "Microsoft.EntityFrameworkCore.Relational": {
+            "target": "Package",
+            "version": "[8.0.1, )"
+          },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "[8.0.0, )"
@@ -65929,14 +65352,6 @@
             "target": "Package",
             "version": "[8.0.1, )",
             "autoReferenced": true
-          },
-          "MySql.Data": {
-            "target": "Package",
-            "version": "[8.3.0, )"
-          },
-          "MySqlConnector": {
-            "target": "Package",
-            "version": "[2.3.5, )"
           }
         },
         "imports": [
@@ -65971,6 +65386,10 @@
             "target": "Package",
             "version": "[8.0.1, )"
           },
+          "Microsoft.EntityFrameworkCore.Relational": {
+            "target": "Package",
+            "version": "[8.0.1, )"
+          },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "[8.0.0, )"
@@ -65988,14 +65407,6 @@
             "target": "Package",
             "version": "[8.0.1, )",
             "autoReferenced": true
-          },
-          "MySql.Data": {
-            "target": "Package",
-            "version": "[8.3.0, )"
-          },
-          "MySqlConnector": {
-            "target": "Package",
-            "version": "[2.3.5, )"
           }
         },
         "imports": [
@@ -66031,6 +65442,10 @@
             "target": "Package",
             "version": "[8.0.1, )"
           },
+          "Microsoft.EntityFrameworkCore.Relational": {
+            "target": "Package",
+            "version": "[8.0.1, )"
+          },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "[8.0.0, )"
@@ -66042,14 +65457,6 @@
           "Microsoft.Maui.Controls.Compatibility": {
             "target": "Package",
             "version": "[8.0.3, )"
-          },
-          "MySql.Data": {
-            "target": "Package",
-            "version": "[8.3.0, )"
-          },
-          "MySqlConnector": {
-            "target": "Package",
-            "version": "[2.3.5, )"
           }
         },
         "imports": [
@@ -66103,5 +65510,13 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\user\\Documents\\Github\\Hackathon\\Hackathon\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

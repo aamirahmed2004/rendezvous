@@ -31,7 +31,6 @@ else
         {
             new Activity
             {
-                id = 1,
                 isPrivate = false,
                 Name = "Outdoor Adventure",
                 Location = "Mountain Peak",
@@ -44,7 +43,6 @@ else
             },
             new Activity
             {
-                id = 2,
                 isPrivate = true,
                 Name = "Virtual Gaming Night",
                 Location = "Virtual",
@@ -57,7 +55,6 @@ else
             },
             new Activity
             {
-                id = 3,
                 isPrivate = false,
                 Name = "Stargazing Party",
                 Location = "Observatory",
@@ -70,7 +67,6 @@ else
             },
             new Activity
             {
-                id = 4,
                 isPrivate = false,
                 Name = "Art Workshop",
                 Location = "Community Center",
@@ -83,7 +79,6 @@ else
             },
             new Activity
             {
-                id = 5,
                 isPrivate = true,
                 Name = "Private Yoga Session",
                 Location = "Home",
@@ -99,6 +94,6 @@ else
         await using var db = await _db.CreateDbContextAsync();
         await db.Activities.AddRangeAsync(Activities);
         await db.SaveChangesAsync();
-        Activities = await db.Activities.ToListAsync();
+        Activities = await db.Activities.Include(i => i.Profiles).Include(i => i.Groups).ToListAsync();
     }
 }
