@@ -35,6 +35,8 @@ namespace ClassLibrary.Db
             modelBuilder.Entity<Image>()
                 .Property(x => x.Img)
                 .HasColumnType("blob");
+
+            DbSeed.SeedActivities(modelBuilder);
             
         }
 
