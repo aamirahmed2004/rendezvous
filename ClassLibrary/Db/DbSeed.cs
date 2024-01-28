@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,19 +12,131 @@ namespace ClassLibrary.Db
     {
         public static void SeedActivities(ModelBuilder modelBuilder)
         {
-            Activity activity = new Activity()
+            List<Activity> activitiesList = new List<Activity>
             {
-                id=1,
-                Name = "Football",
-                isPrivate = false,
-                Time_start = DateTime.Now,
-                Time_end = DateTime.Now.AddDays(1),
-                Age_rating = "18+",
-                Description = "Football is a family of team sports that involve, to varying degrees, kicking a ball to score a goal.",
-                Profiles = new List<Profile>(),
-                Groups = new List<Group>(),
+                new Activity()
+                {
+                    id = 1,
+                    Name = "Football Match",
+                    isPrivate = false,
+                    Time_start = DateTime.Now,
+                    Time_end = DateTime.Now.AddHours(2),
+                    Age_rating = "All Ages",
+                    Description = "A fun and competitive football match.",
+                    Profiles = new List<Profile>(),
+                    Groups = new List<Group>(),
+                },
+                new Activity()
+                {
+                    id = 2,
+                    Name = "Basketball Training",
+                    isPrivate = true,
+                    Time_start = DateTime.Now.AddHours(1),
+                    Time_end = DateTime.Now.AddHours(3),
+                    Age_rating = "12+",
+                    Description = "Training session for local basketball team.",
+                    Profiles = new List<Profile>(),
+                    Groups = new List<Group>(),
+                },
+                new Activity()
+                {
+                    id = 3,
+                    Name = "Chess Tournament",
+                    isPrivate = false,
+                    Time_start = DateTime.Now.AddDays(1),
+                    Time_end = DateTime.Now.AddDays(1).AddHours(4),
+                    Age_rating = "All Ages",
+                    Description = "Regional chess tournament open for all.",
+                    Profiles = new List<Profile>(),
+                    Groups = new List<Group>(),
+                },
+                new Activity()
+                {
+                    id = 4,
+                    Name = "Book Club",
+                    isPrivate = false,
+                    Time_start = DateTime.Now.AddDays(2),
+                    Time_end = DateTime.Now.AddDays(2).AddHours(2),
+                    Age_rating = "18+",
+                    Description = "Discussing the latest in literary wonders.",
+                    Profiles = new List<Profile>(),
+                    Groups = new List<Group>(),
+                },
+                new Activity()
+                {
+                    id = 5,
+                    Name = "Yoga Class",
+                    isPrivate = true,
+                    Time_start = DateTime.Now.AddHours(2),
+                    Time_end = DateTime.Now.AddHours(3),
+                    Age_rating = "16+",
+                    Description = "A relaxing yoga session to improve your flexibility.",
+                    Profiles = new List<Profile>(),
+                    Groups = new List<Group>(),
+                },
+                new Activity()
+                {
+                    id = 6,
+                    Name = "Cooking Workshop",
+                    isPrivate = false,
+                    Time_start = DateTime.Now.AddDays(3),
+                    Time_end = DateTime.Now.AddDays(3).AddHours(5),
+                    Age_rating = "All Ages",
+                    Description = "Learn to cook Italian cuisine with expert chefs.",
+                    Profiles = new List<Profile>(),
+                    Groups = new List<Group>(),
+                },
+                new Activity()
+                {
+                    id = 7,
+                    Name = "Coding Hackathon",
+                    isPrivate = false,
+                    Time_start = DateTime.Now.AddDays(4),
+                    Time_end = DateTime.Now.AddDays(5),
+                    Age_rating = "18+",
+                    Description = "Collaborative event to solve programming challenges.",
+                    Profiles = new List<Profile>(),
+                    Groups = new List<Group>(),
+                },
+                new Activity()
+                {
+                    id = 8,
+                    Name = "Rock Climbing Adventure",
+                    isPrivate = true,
+                    Time_start = DateTime.Now.AddDays(1).AddHours(2),
+                    Time_end = DateTime.Now.AddDays(1).AddHours(6),
+                    Age_rating = "12+",
+                    Description = "Experience the thrill of rock climbing with trained instructors.",
+                    Profiles = new List<Profile>(),
+                    Groups = new List<Group>(),
+                },
+                new Activity()
+                {
+                    id = 9,
+                    Name = "Guitar Lessons",
+                    isPrivate = true,
+                    Time_start = DateTime.Now.AddDays(2).AddHours(1),
+                    Time_end = DateTime.Now.AddDays(2).AddHours(3),
+                    Age_rating = "All Ages",
+                    Description = "Beginner guitar lessons for aspiring musicians.",
+                    Profiles = new List<Profile>(),
+                    Groups = new List<Group>(),
+                },
+                new Activity()
+                {
+                    id = 10,
+                    Name = "Art Exhibition",
+                    isPrivate = false,
+                    Time_start = DateTime.Now.AddDays(6),
+                    Time_end = DateTime.Now.AddDays(6).AddHours(8),
+                    Age_rating = "All Ages",
+                    Description = "Showcasing contemporary art from local artists.",
+                    Profiles = new List<Profile>(),
+                    Groups = new List<Group>(),
+                }
             };
-            modelBuilder.Entity<Activity>().HasData(activity);
+
+            modelBuilder.Entity<Activity>().HasData(activitiesList);
             
         }
 
@@ -37,7 +150,8 @@ namespace ClassLibrary.Db
                     Name = "John Doe",
                     Nickname = "JD",
                     Password = "password",
-                    Email = "jd@gmail.com"
+                    Email = "jd@gmail.com",
+                    BDate = new DateTime(1999, 1, 1)
                 },
                 new User()
                 {
@@ -45,7 +159,8 @@ namespace ClassLibrary.Db
                     Name = "Jane Doe",
                     Nickname = "Jane",
                     Password = "password",
-                    Email = "jane@gmai.com"
+                    Email = "jane@gmai.com",
+                    BDate = new DateTime(2003, 1, 1)
                 }
             };
             modelBuilder.Entity<User>().HasData(users);
@@ -54,6 +169,7 @@ namespace ClassLibrary.Db
 
         public static void SeedProfile(ModelBuilder modelBuilder, List<User> users, List<InterestTag> tags)
         {
+
             int i = 1;
             foreach(User user in users)
             {
@@ -61,6 +177,7 @@ namespace ClassLibrary.Db
                 {
                     id = i++,
                     UserId = user.id,
+                    Image = new byte[50],
                     Name = "Football",
                     Pronouns = "He/Him",
                     AboutMe = "I am a student at the University of Utah",

@@ -72,11 +72,101 @@ namespace ClassLibrary.Migrations
                         new
                         {
                             id = 1,
+                            Age_rating = "All Ages",
+                            Description = "A fun and competitive football match.",
+                            Name = "Football Match",
+                            Time_end = new DateTime(2024, 1, 28, 10, 14, 55, 781, DateTimeKind.Local).AddTicks(6233),
+                            Time_start = new DateTime(2024, 1, 28, 8, 14, 55, 781, DateTimeKind.Local).AddTicks(6176),
+                            isPrivate = false
+                        },
+                        new
+                        {
+                            id = 2,
+                            Age_rating = "12+",
+                            Description = "Training session for local basketball team.",
+                            Name = "Basketball Training",
+                            Time_end = new DateTime(2024, 1, 28, 11, 14, 55, 781, DateTimeKind.Local).AddTicks(6252),
+                            Time_start = new DateTime(2024, 1, 28, 9, 14, 55, 781, DateTimeKind.Local).AddTicks(6250),
+                            isPrivate = true
+                        },
+                        new
+                        {
+                            id = 3,
+                            Age_rating = "All Ages",
+                            Description = "Regional chess tournament open for all.",
+                            Name = "Chess Tournament",
+                            Time_end = new DateTime(2024, 1, 29, 12, 14, 55, 781, DateTimeKind.Local).AddTicks(6260),
+                            Time_start = new DateTime(2024, 1, 29, 8, 14, 55, 781, DateTimeKind.Local).AddTicks(6257),
+                            isPrivate = false
+                        },
+                        new
+                        {
+                            id = 4,
                             Age_rating = "18+",
-                            Description = "Football is a family of team sports that involve, to varying degrees, kicking a ball to score a goal.",
-                            Name = "Football",
-                            Time_end = new DateTime(2024, 1, 29, 4, 2, 21, 788, DateTimeKind.Local).AddTicks(1877),
-                            Time_start = new DateTime(2024, 1, 28, 4, 2, 21, 788, DateTimeKind.Local).AddTicks(1829),
+                            Description = "Discussing the latest in literary wonders.",
+                            Name = "Book Club",
+                            Time_end = new DateTime(2024, 1, 30, 10, 14, 55, 781, DateTimeKind.Local).AddTicks(6266),
+                            Time_start = new DateTime(2024, 1, 30, 8, 14, 55, 781, DateTimeKind.Local).AddTicks(6264),
+                            isPrivate = false
+                        },
+                        new
+                        {
+                            id = 5,
+                            Age_rating = "16+",
+                            Description = "A relaxing yoga session to improve your flexibility.",
+                            Name = "Yoga Class",
+                            Time_end = new DateTime(2024, 1, 28, 11, 14, 55, 781, DateTimeKind.Local).AddTicks(6271),
+                            Time_start = new DateTime(2024, 1, 28, 10, 14, 55, 781, DateTimeKind.Local).AddTicks(6269),
+                            isPrivate = true
+                        },
+                        new
+                        {
+                            id = 6,
+                            Age_rating = "All Ages",
+                            Description = "Learn to cook Italian cuisine with expert chefs.",
+                            Name = "Cooking Workshop",
+                            Time_end = new DateTime(2024, 1, 31, 13, 14, 55, 781, DateTimeKind.Local).AddTicks(6279),
+                            Time_start = new DateTime(2024, 1, 31, 8, 14, 55, 781, DateTimeKind.Local).AddTicks(6278),
+                            isPrivate = false
+                        },
+                        new
+                        {
+                            id = 7,
+                            Age_rating = "18+",
+                            Description = "Collaborative event to solve programming challenges.",
+                            Name = "Coding Hackathon",
+                            Time_end = new DateTime(2024, 2, 2, 8, 14, 55, 781, DateTimeKind.Local).AddTicks(6286),
+                            Time_start = new DateTime(2024, 2, 1, 8, 14, 55, 781, DateTimeKind.Local).AddTicks(6284),
+                            isPrivate = false
+                        },
+                        new
+                        {
+                            id = 8,
+                            Age_rating = "12+",
+                            Description = "Experience the thrill of rock climbing with trained instructors.",
+                            Name = "Rock Climbing Adventure",
+                            Time_end = new DateTime(2024, 1, 29, 14, 14, 55, 781, DateTimeKind.Local).AddTicks(6292),
+                            Time_start = new DateTime(2024, 1, 29, 10, 14, 55, 781, DateTimeKind.Local).AddTicks(6290),
+                            isPrivate = true
+                        },
+                        new
+                        {
+                            id = 9,
+                            Age_rating = "All Ages",
+                            Description = "Beginner guitar lessons for aspiring musicians.",
+                            Name = "Guitar Lessons",
+                            Time_end = new DateTime(2024, 1, 30, 11, 14, 55, 781, DateTimeKind.Local).AddTicks(6298),
+                            Time_start = new DateTime(2024, 1, 30, 9, 14, 55, 781, DateTimeKind.Local).AddTicks(6296),
+                            isPrivate = true
+                        },
+                        new
+                        {
+                            id = 10,
+                            Age_rating = "All Ages",
+                            Description = "Showcasing contemporary art from local artists.",
+                            Name = "Art Exhibition",
+                            Time_end = new DateTime(2024, 2, 3, 16, 14, 55, 781, DateTimeKind.Local).AddTicks(6306),
+                            Time_start = new DateTime(2024, 2, 3, 8, 14, 55, 781, DateTimeKind.Local).AddTicks(6304),
                             isPrivate = false
                         });
                 });
@@ -106,21 +196,6 @@ namespace ClassLibrary.Migrations
                     b.HasIndex("ActivityId");
 
                     b.ToTable("Groups");
-                });
-
-            modelBuilder.Entity("ClassLibrary.Db.Image", b =>
-                {
-                    b.Property<int>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    b.Property<byte[]>("Img")
-                        .IsRequired()
-                        .HasColumnType("blob");
-
-                    b.HasKey("id");
-
-                    b.ToTable("Image");
                 });
 
             modelBuilder.Entity("ClassLibrary.Db.InterestTag", b =>
@@ -179,6 +254,9 @@ namespace ClassLibrary.Migrations
                     b.Property<string>("AboutMe")
                         .HasColumnType("longtext");
 
+                    b.Property<byte[]>("Image")
+                        .HasColumnType("blob");
+
                     b.Property<string>("Links")
                         .IsRequired()
                         .HasColumnType("longtext");
@@ -207,6 +285,7 @@ namespace ClassLibrary.Migrations
                         {
                             id = 1,
                             AboutMe = "I am a student at the University of Utah",
+                            Image = new byte[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
                             Links = "https://www.facebook.com/ https://www.instagram.com/",
                             LookingFor = "I am looking for a group of people to play football with",
                             Name = "Football",
@@ -218,8 +297,29 @@ namespace ClassLibrary.Migrations
                             id = 2,
                             AboutMe = "I am a student at the University of Utah",
                             Links = "https://www.facebook.com/ https://www.instagram.com/",
+                            LookingFor = "I am looking for a group of people to play basketball with",
+                            Name = "Basketball",
+                            Pronouns = "He/Him",
+                            UserId = 1
+                        },
+                        new
+                        {
+                            id = 3,
+                            AboutMe = "I am a student at the University of Utah",
+                            Image = new byte[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+                            Links = "https://www.facebook.com/ https://www.instagram.com/",
                             LookingFor = "I am looking for a group of people to play football with",
                             Name = "Football",
+                            Pronouns = "He/Him",
+                            UserId = 2
+                        },
+                        new
+                        {
+                            id = 4,
+                            AboutMe = "I am a student at the University of Utah",
+                            Links = "https://www.facebook.com/ https://www.instagram.com/",
+                            LookingFor = "I am looking for a group of people to play basketball with",
+                            Name = "Basketball",
                             Pronouns = "He/Him",
                             UserId = 2
                         });
@@ -265,7 +365,7 @@ namespace ClassLibrary.Migrations
                         new
                         {
                             id = 1,
-                            BDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            BDate = new DateTime(1999, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "jd@gmail.com",
                             Name = "John Doe",
                             Nickname = "JD",
@@ -274,7 +374,7 @@ namespace ClassLibrary.Migrations
                         new
                         {
                             id = 2,
-                            BDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            BDate = new DateTime(2003, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "jane@gmai.com",
                             Name = "Jane Doe",
                             Nickname = "Jane",

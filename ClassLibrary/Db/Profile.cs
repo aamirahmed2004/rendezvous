@@ -15,6 +15,7 @@ namespace ClassLibrary.Db
         public int id { get; set; }
         public int UserId { get; set; }
         public User User { get; set; }
+        public byte[]? Image { get; set; }
 
         /// <summary>
         /// name of the profile

@@ -33,8 +33,8 @@ namespace ClassLibrary.Db
                 .HasMany(e => e.Profiles)
                 .WithMany(e => e.Activities);
 
-            modelBuilder.Entity<Image>()
-                .Property(x => x.Img)
+            modelBuilder.Entity<Profile>()
+                .Property(x => x.Image)
                 .HasColumnType("blob");
 
             DbSeed.SeedActivities(modelBuilder);
