@@ -36,7 +36,7 @@ else
         try
         {
             await using var db = await _db.CreateDbContextAsync();
-            Profiles = await db.Profiles.Include(i => i.User).ToListAsync();
+            Profiles = await db.Profiles.Include(i => i.User).Where(w => w.UserId == 1).ToListAsync();
             await base.OnInitializedAsync();
         }catch(Exception ex)
         {
