@@ -19,7 +19,22 @@ namespace ClassLibrary.Migrations
                 .HasAnnotation("ProductVersion", "8.0.1")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
-            modelBuilder.Entity("ClassLibrary.TeamDbContext.Activity", b =>
+            modelBuilder.Entity("ActivityProfile", b =>
+                {
+                    b.Property<int>("Activitiesid")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Profilesid")
+                        .HasColumnType("int");
+
+                    b.HasKey("Activitiesid", "Profilesid");
+
+                    b.HasIndex("Profilesid");
+
+                    b.ToTable("ActivityProfile");
+                });
+
+            modelBuilder.Entity("ClassLibrary.Db.Activity", b =>
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()
@@ -29,7 +44,15 @@ namespace ClassLibrary.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
                     b.Property<string>("Location")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<DateTime>("Time_end")
@@ -43,10 +66,10 @@ namespace ClassLibrary.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("Activities", (string)null);
+                    b.ToTable("Activities");
                 });
 
-            modelBuilder.Entity("ClassLibrary.TeamDbContext.Group", b =>
+            modelBuilder.Entity("ClassLibrary.Db.Group", b =>
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()
@@ -63,14 +86,37 @@ namespace ClassLibrary.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<int>("ReqNumUsers")
+                        .HasColumnType("int");
+
                     b.HasKey("id");
 
                     b.HasIndex("ActivityId");
 
-                    b.ToTable("Groups", (string)null);
+                    b.ToTable("Groups");
                 });
 
-            modelBuilder.Entity("ClassLibrary.TeamDbContext.InterestTag", b =>
+            modelBuilder.Entity("ClassLibrary.Db.Image", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<byte[]>("Img")
+                        .IsRequired()
+                        .HasColumnType("blob");
+
+                    b.Property<int?>("Profileid")
+                        .HasColumnType("int");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("Profileid");
+
+                    b.ToTable("Image");
+                });
+
+            modelBuilder.Entity("ClassLibrary.Db.InterestTag", b =>
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()
@@ -87,16 +133,20 @@ namespace ClassLibrary.Migrations
 
                     b.HasIndex("Profileid");
 
-                    b.ToTable("InterestTags", (string)null);
+                    b.ToTable("InterestTags");
                 });
 
-            modelBuilder.Entity("ClassLibrary.TeamDbContext.Profile", b =>
+            modelBuilder.Entity("ClassLibrary.Db.Profile", b =>
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     b.Property<string>("AboutMe")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Links")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("LookingFor")
@@ -112,36 +162,36 @@ namespace ClassLibrary.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Profiles", (string)null);
+                    b.ToTable("Profiles");
                 });
 
-            modelBuilder.Entity("ClassLibrary.TeamDbContext.User", b =>
+            modelBuilder.Entity("ClassLibrary.Db.User", b =>
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
+                    b.Property<DateOnly>("BDate")
+                        .HasColumnType("date");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
                     b.Property<int?>("Groupid")
                         .HasColumnType("int");
 
-                    b.Property<int>("age")
-                        .HasColumnType("int");
+                    b.Property<string>("Location")
+                        .HasColumnType("longtext");
 
-                    b.Property<string>("email")
+                    b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<string>("location")
+                    b.Property<string>("Nickname")
                         .HasColumnType("longtext");
 
-                    b.Property<string>("name")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("nickname")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("password")
+                    b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("longtext");
 
@@ -149,13 +199,43 @@ namespace ClassLibrary.Migrations
 
                     b.HasIndex("Groupid");
 
-                    b.ToTable("Users", (string)null);
+                    b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("ClassLibrary.TeamDbContext.Group", b =>
+            modelBuilder.Entity("GroupProfile", b =>
                 {
-                    b.HasOne("ClassLibrary.TeamDbContext.Activity", "Activity")
+                    b.Property<int>("Groupsid")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Profilesid")
+                        .HasColumnType("int");
+
+                    b.HasKey("Groupsid", "Profilesid");
+
+                    b.HasIndex("Profilesid");
+
+                    b.ToTable("GroupProfile");
+                });
+
+            modelBuilder.Entity("ActivityProfile", b =>
+                {
+                    b.HasOne("ClassLibrary.Db.Activity", null)
                         .WithMany()
+                        .HasForeignKey("Activitiesid")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ClassLibrary.Db.Profile", null)
+                        .WithMany()
+                        .HasForeignKey("Profilesid")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("ClassLibrary.Db.Group", b =>
+                {
+                    b.HasOne("ClassLibrary.Db.Activity", "Activity")
+                        .WithMany("Groups")
                         .HasForeignKey("ActivityId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -163,16 +243,23 @@ namespace ClassLibrary.Migrations
                     b.Navigation("Activity");
                 });
 
-            modelBuilder.Entity("ClassLibrary.TeamDbContext.InterestTag", b =>
+            modelBuilder.Entity("ClassLibrary.Db.Image", b =>
                 {
-                    b.HasOne("ClassLibrary.TeamDbContext.Profile", null)
+                    b.HasOne("ClassLibrary.Db.Profile", null)
+                        .WithMany("Images")
+                        .HasForeignKey("Profileid");
+                });
+
+            modelBuilder.Entity("ClassLibrary.Db.InterestTag", b =>
+                {
+                    b.HasOne("ClassLibrary.Db.Profile", null)
                         .WithMany("InterestTags")
                         .HasForeignKey("Profileid");
                 });
 
-            modelBuilder.Entity("ClassLibrary.TeamDbContext.Profile", b =>
+            modelBuilder.Entity("ClassLibrary.Db.Profile", b =>
                 {
-                    b.HasOne("ClassLibrary.TeamDbContext.User", "User")
+                    b.HasOne("ClassLibrary.Db.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -181,20 +268,42 @@ namespace ClassLibrary.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("ClassLibrary.TeamDbContext.User", b =>
+            modelBuilder.Entity("ClassLibrary.Db.User", b =>
                 {
-                    b.HasOne("ClassLibrary.TeamDbContext.Group", null)
+                    b.HasOne("ClassLibrary.Db.Group", null)
                         .WithMany("Users")
                         .HasForeignKey("Groupid");
                 });
 
-            modelBuilder.Entity("ClassLibrary.TeamDbContext.Group", b =>
+            modelBuilder.Entity("GroupProfile", b =>
+                {
+                    b.HasOne("ClassLibrary.Db.Group", null)
+                        .WithMany()
+                        .HasForeignKey("Groupsid")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ClassLibrary.Db.Profile", null)
+                        .WithMany()
+                        .HasForeignKey("Profilesid")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("ClassLibrary.Db.Activity", b =>
+                {
+                    b.Navigation("Groups");
+                });
+
+            modelBuilder.Entity("ClassLibrary.Db.Group", b =>
                 {
                     b.Navigation("Users");
                 });
 
-            modelBuilder.Entity("ClassLibrary.TeamDbContext.Profile", b =>
+            modelBuilder.Entity("ClassLibrary.Db.Profile", b =>
                 {
+                    b.Navigation("Images");
+
                     b.Navigation("InterestTags");
                 });
 #pragma warning restore 612, 618
